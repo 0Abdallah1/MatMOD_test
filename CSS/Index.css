@@ -8,23 +8,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .navigation {
-    background: #333;
+    background: #585555;
     padding: 15px;
 }
-
-.navselection {
+.navselection {  /* List of buttons */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+    text-align: right;
+    gap: 20px;
+}
+.navselection a{ /* link elements inside list */
+    font-size: 25px;
+    font-weight: 450;
+    color: rgb(240, 240, 240);
+    transition: .4s;
+    text-decoration: none;
 }
 
-.logo-container {
-    margin-right: auto;
+.navselection a:hover {
+    color: rgb(213, 169, 10);
+    transform: scale(1.1);
 }
 
-.logo {
+
+.navigation img {
     height: auto;
     width: 100px;
 }
