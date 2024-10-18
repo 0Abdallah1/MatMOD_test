@@ -1,42 +1,49 @@
-/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navigation bar styling */
-.navbar {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-}
-
-.navbar ul li a:hover {
-    color: #ff9900;
-}
-
-/* Add some padding to the body so content doesn't hide behind the navbar */
 body {
-    padding-top: 50px;
     font-family: Arial, sans-serif;
+}
+
+.navigation {
+    background: #333;
+    padding: 15px;
+}
+
+.navselection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    background: #575757;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    background: #444;
 }
