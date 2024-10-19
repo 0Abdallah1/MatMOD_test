@@ -8,50 +8,43 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-.navigation {
-    background: #585555;
-    padding: 15px;
+.navbar {
+    background-color: rgb(72, 87, 87);
 }
-.navselection {  /* List of buttons */
+
+.navdiv {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: right;
     gap: 20px;
 }
-.navselection a{ /* link elements inside list */
-    font-size: 25px;
-    font-weight: 450;
-    color: rgb(240, 240, 240);
-    transition: .4s;
-    text-decoration: none;
-}
 
-.navselection a:hover {
-    color: rgb(213, 169, 10);
-    transform: scale(1.1);
-}
-
-
-.navigation img {
-    height: auto;
-    width: 100px;
-}
-
-.nav-buttons {
+.navdiv ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-.nav-buttons a {
-    color: white;
-    text-decoration: none;
+li {
+    list-style: none;
+}
+
+li a {
+    color: aliceblue;
     font-size: 18px;
-    padding: 12px 20px;
-    background: #575757;
-    border-radius: 5px;
-    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 25px;
+    transition: color 0.3s;
 }
 
-.nav-buttons a:hover {
-    background: #444;
+li a:hover {
+    color: #dca52d;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+
 }
