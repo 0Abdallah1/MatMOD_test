@@ -3,7 +3,7 @@ footer {
     background-color: grey;
 }
 
-footerleft {
+.footerleft {
 
     width: 100;
     margin: auto;
@@ -12,15 +12,15 @@ footerleft {
 
 }
 
-footermidle {
+.footermidle {
 
 }
 
-footerright {
+.footerright {
 text-align: right;
 
 }
 
-footerbottom {
+.footerbottom {
 text-align: left;
 }
