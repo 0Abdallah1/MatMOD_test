@@ -1,0 +1,26 @@
+/*footer*/
+footer {
+    background-color: grey;
+}
+
+footerleft {
+
+    width: 100;
+    margin: auto;
+    text-align:left;
+    color: grey;
+
+}
+
+footermidle {
+
+}
+
+footerright {
+text-align: right;
+
+}
+
+footerbottom {
+text-align: left;
+}
