@@ -1,46 +1,65 @@
 
 .footer {
     display: flex;
-    background-color: grey;
+    background-color: rgba(249, 147, 147, 0.45);
     padding: 10%;
+    width: auto;
+    overflow-x: hidden;
+   
+    
 
 }
 
-.footerleft {
+.grid-container, .grid-item {
 
     width: 100%;
     margin: auto;
-    justify-content:left;
-    color: rgb(230, 221, 221);
+    justify-content:flex-start;
+    color: rgb(162, 152, 152);
     display: flex;
+    flex-direction: column;
     flex: 1;
-
 
 }
 
-.footermidle {
-    width: 100%;
+
+.icon-container {
+    width: 150%;
     margin: auto;
-    justify-content: center;
     color: rgb(230, 221, 221);
     display: flex;
+    flex-direction: row;
     flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.5em;
+    gap: 10%;
+
+   
 }
 
-.footerright {
-text-align: right;
-display: flex;
+
+.footermap, .google-maps {
+    text-align: right; 
+    display: flex;
+flex-direction: column;
 justify-content: flex-end;
 flex: 1;
 
 }
 
-.google-maps {
-   display: flex; 
-   justify-content: flex-end;
-    
+
+.adresstext {
+flex-direction: column;
+text-align: left;
+display: flex;
+align-items: right;
+
 }
 
-.footerbottom {
-text-align: left;
+.footerlogo {
+    justify-content: flex-end;
+
 }
+
+/*w3schools flex responsive*/
