@@ -1,6 +1,9 @@
 /*footer*/
-footer {
+.footer {
+    display: flex;
     background-color: grey;
+    padding: 10%;
+
 }
 
 .footerleft {
@@ -10,6 +13,7 @@ footer {
     justify-content:left;
     color: rgb(230, 221, 221);
     display: flex;
+    flex: 1;
 
 
 }
@@ -20,11 +24,21 @@ footer {
     justify-content: center;
     color: rgb(230, 221, 221);
     display: flex;
+    flex: 1;
 }
 
 .footerright {
 text-align: right;
+display: flex;
+justify-content: flex-end;
+flex: 1;
 
+}
+
+.google-maps {
+   display: flex; 
+   justify-content: flex-end;
+    
 }
 
 .footerbottom {
