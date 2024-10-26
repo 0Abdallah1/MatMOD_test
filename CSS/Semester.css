@@ -12,3 +12,14 @@ button {
   cursor: pointer;
 }
 
+thead {
+  text-decoration: none;
+  align-self: start;
+}
+
+dl{
+  height: 50%;
+  width: 50%;
+  background-color: rgb(105, 103, 103);
+  box-shadow: 2px 2px 3px black;;
+}
