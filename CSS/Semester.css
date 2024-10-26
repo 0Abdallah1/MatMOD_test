@@ -12,20 +12,51 @@ button {
   cursor: pointer;
 }
 
-thead {
+h3{
+  position:center;
+  float:inline-start 
+  flex: 1%;
+}
+
+
+
+.semester  {
   text-decoration: none;
-  align-self: start;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 18px;
+  margin: 0.5% 1% 1%;
+  word-spacing: 2%;
+  color: #000;
+  display: inline-block;
+  background-color: whitesmoke;
+  height: 60%;
+  width: 40%;
+  background-color: rgb(255, 236, 30);
+  border: 1px solid #d3d3d3;
+  display:inline-table;;
+  cursor: pointer;
+  box-sizing: content-box 1px;
+  margin: 1% 3% 2% 1%;
+  padding: 0.5% 1% 3%;
 }
 
-thead a:hover {
-  background: black;
-  color: yellow;
-
+dd{
+  text-align: right;
+  font-size: medium;
+  font-weight: 150;
+  margin-bottom: 6%;
 }
 
-dl{
+
+
+
+
+
+
+/* dl{
+
+
+
+
   height: 50px;
   width: 50px;
   background-color: rgb(105, 103, 103);
@@ -34,13 +65,8 @@ dl{
   justify-content: space-around;
   display: flex;
   width: 500%;
-}
+} */
 
-.semester{
-  height: 50vh;
-  width: 50vw
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
+
+
 
