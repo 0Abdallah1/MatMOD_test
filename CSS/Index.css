@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/*body {
     font-family: Arial, sans-serif;
 }
-
+*/
 #navbar {
     background-color: rgba(255, 255, 255, 0.7); /*added transperency to menu */
     display: flex;
@@ -49,3 +49,55 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
+/*(fatima)*/
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /*space from all edges of the page */
+    margin: 0;
+    align-items: center;
+    
+    font-family: Arial, sans-serif;
+
+ 
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 90%;
+    gap: 0.5%;
+}
+
+/* Icon container styling */
+.icon-clock, .icon-calendar , .icon-graduation-cap , .icon-location-dot , .icon-building-columns , .icon-language , .icon-users-line{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;  
+    width: 20%;
+   
+
+}
+
+/* Icon styling */
+.fa-clock , .fa-calendar , .fa-graduation-cap , .fa-location-dot , .fa-building-columns , .fa-language , .fa-users-line{
+    font-size: 4rem; 
+    margin-bottom: 0.5em; 
+    color: #0b074b;
+}
+
+/* Text styling for the paragraphs under icons */
+.icon-clock p, .icon-calendar p, .icon-graduation-cap p , .icon-location-dot p , .icon-building-columns p , .icon-language p , .icon-users-line p{
+    font-size: 1.25rem; 
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;  
+    color: #0b074b;
+}
+
+
