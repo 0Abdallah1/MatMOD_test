@@ -2,42 +2,77 @@ button {
   background-color: rgb(255, 255, 69);
   border-radius: 1%;
   color: black;
-  padding: 10px 22px;
+  padding: 1em 2em;
   text-align: center;
   text-decoration: none;
   display: inline;
   position: relative;
   font-size: 16px;
-  margin: 2px 2px;
+  margin: 0em 0em;
   cursor: pointer;
+}
+h4 {
+  margin: 0.5em;
+  margin-left: 10em;
+  border-radius: 0.1em;
+  box-shadow: 1em
+  border: 0.1em black;
+  t
+
 }
 
 h3{
   position:center;
   float:inline-start 
   flex: 1%;
+  margin: 0em;
+  padding: 2%;
 }
 
 
 
-.semester  {
+.beholder  { 
   text-decoration: none;
   font-size: 18px;
-  margin: 0.5% 1% 1%;
+  margin: 1% 2% 1%;
+  padding: 0.5% 1%;
   word-spacing: 2%;
   color: #000;
-  display: inline-block;
+  display: inline-table;
   background-color: whitesmoke;
-  height: 60%;
-  width: 40%;
-  background-color: rgb(255, 236, 30);
-  border: 1px solid #d3d3d3;
-  display:inline-table;;
+  height: 30%;
+  width: 25%;
+  background-color: rgba(247, 233, 89, 0.908);
+  border: 0.2em solid #0c0b0b;
+  display:-ms-inline-grid;;
   cursor: pointer;
-  box-sizing: content-box 1px;
-  margin: 1% 3% 2% 1%;
-  padding: 0.5% 1% 3%;
+  box-sizing: content-box 0.5px;
+  justify-content: space-evenly;
+  border-radius: 1em;
 }
+
+
+hr.solid {
+  border-top: 0.01em solid #8d8d8d;
+}
+
+hr.rounded{
+  border-top: 0.1em solid black;
+  border-radius: 1em;
+  
+}
+
+a{
+  text-decoration:none;
+  color: #000;
+  text-decoration: underline rgb(53, 161, 255);
+}
+
+a:hover {
+  text-decoration: underline rgb(1, 2, 5);
+
+}
+
 
 dd{
   text-align: right;
@@ -45,6 +80,10 @@ dd{
   font-weight: 150;
   margin-bottom: 6%;
 }
+
+#andreår {
+width: 60%;
+height: 90%;}
 
 
 
