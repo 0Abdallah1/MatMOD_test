@@ -41,7 +41,7 @@
     transform: scale(1.2);
 }
 #navbar img {
-    width: 25vh; height: auto; margin-left: 5vw;
+    width: 25vh; height: auto; margin-left: 0%;
 }
 
 
@@ -81,7 +81,6 @@ body{
     padding: 20px; /*space from all edges of the page */
     margin: 0;
     align-items: center;
-    
     font-family: Arial, sans-serif;
 
  

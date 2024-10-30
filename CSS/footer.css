@@ -1,121 +1,75 @@
-.footer {
 
+.footer {
     display: flex;
-    
     background-color: rgba(249, 147, 147, 0.45);
-    
     padding: 2%;
-    
     width: 100%;
-    
     overflow-x: hidden;
-    
     align-items: flex-start;
-    
     flex-direction: column;
-    
     gap: 20%;
-    
     position: relative;
-    
-    }
-    
-    .footerlogo {
-    
+}
+
+.footerlogo {
     align-self: flex-start;
-    
     width: 100%;
-    
     height: auto;
-    
     margin-bottom: 1%;
-    
-    }
-    
-    .grid-container{
-    
+ }
+
+.grid-container{
     width: 100%;
-    
     color: rgb(25, 23, 23);
-    
     display: flex;
-    
     flex-direction: column;
-    
     gap: 1.5vh;
-    
     margin-left:5%;
-    
     margin: 1%;
     
-    }
-    
-    h2{
-    
+}
+
+h2{
     color: black;
-    
     font-size: 120%;
-    
-    }
-    
-    .icon-container {
-    
+}
+
+.icon-container {
     width: 100%;
-    
     color: rgb(230, 221, 221);
-    
     display: flex;
-    
     flex-direction: row;
-    
     justify-content: flex-start;
-    
     align-items: flex-end;
-    
     gap: 3%;
-    
     margin-left:5%;
-    
     margin: 1%;
     
-    }
     
-    .icon-container i{
-    
+}
+
+.icon-container i{
     font-size: 1.3em;
-    
-    }
-    
-    .footermap, .google-maps {
-    
+}
+
+.footermap, .google-maps {
+   
     flex-direction: column;
-    
     justify-content: flex-end;
-    
     display: flex;
-    
     margin-left: auto;
-    
     top: 3vh;
-    
     right: 0.5%;
-    
     align-items: flex-start;
-    
     position: absolute;
-    
-    }
-    
-    .adresstext {
-    
-    flex-direction: row;
-    
-    display: flex;
-    
-    margin-left:auto;
-    
-    gap: 15vh;
-    
-    }
-    
-    /*w3schools flex responsive*/
+}
+
+.adresstext {
+flex-direction: row;
+display: flex;
+margin-left:auto;
+gap: 15vh;
+}
+
+
+/*w3schools flex responsive*/
