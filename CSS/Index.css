@@ -122,4 +122,37 @@ body{
     color: #0b074b;
 }
 
+<!--israa skrev-->
+
+details{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+   
+}
+
+summary{
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+
+}
+
+details[open] summary{
+    color: #0073e6;
+}
+
+.content {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #555;
+    
+
+
+
+}
+
+
 
