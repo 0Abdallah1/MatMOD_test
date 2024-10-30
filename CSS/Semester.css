@@ -34,14 +34,14 @@ h3{
 .beholder  { 
   text-decoration: none;
   font-size: 18px;
-  margin: 1% 2% 1%;
+  margin: 0.1% 2% 1%;
   padding: 0.5% 1%;
   word-spacing: 2%;
   color: #000;
   display: inline-table;
   background-color: whitesmoke;
   height: 30%;
-  width: 25%;
+  width: 20%;
   background-color: rgba(253, 241, 114, 0.908);
   border: 0.2em solid #0c0b0b;
   display:-ms-inline-grid;;
