@@ -12,8 +12,12 @@ button {
   cursor: pointer;
 }
 h4 {
-  margin-left: 1em;
+  margin: 0.5em;
+  margin-left: 10em;
   border-radius: 0.1em;
+  box-shadow: 1em
+  border: 0.1em black;
+  t
 
 }
 
@@ -61,7 +65,7 @@ hr.rounded{
 a{
   text-decoration:none;
   color: #000;
-  text-decoration: underline rgb(218, 235, 250);
+  text-decoration: underline rgb(53, 161, 255);
 }
 
 a:hover {
