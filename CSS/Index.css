@@ -93,14 +93,11 @@
 }
 
 
-
-
 /*(fatima)*/
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    align-items: center;
     font-family: Arial, sans-serif;
 
 }
