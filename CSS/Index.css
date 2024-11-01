@@ -3,74 +3,95 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Colors for the navigation menu*/
 #navbar {
-    background-color: rgb(241, 241, 241);
+    background: linear-gradient(
+        to bottom, 
+        rgba(60, 61, 46, 0.7) 10%,       /* Black at top*/
+        rgba(60, 61, 46, 0.45) 40%,    
+        rgba(60, 61, 46, 0.25) 64%,
+        rgba(60, 61, 46, 0.1) 80%,      
+        rgba(255, 255, 255, 0) 100%    /* Fully transparent at the bottom */
+    );
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
 }
-
-
 .nav-menu {
-    padding: 0.5%; /* Add responsive padding on the left and right */
+    padding: 1em; /* Add responsive padding */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* wrap items in new line */
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
-    gap: 3%; /* Adjust spacing between items responsively */
+    gap: 3em; 
     text-align: right;
 }
-.nav-menu a{
-    font-size: 1.4em;
-    flex-wrap: wrap;
-    font-weight: 450;
-    color: rgb(0, 0, 0);
+
+.nav-menu a {
+    font-size: 1.2em;
+    color: rgb(229, 215, 245);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
 }
+
 .nav-menu a:hover {
     color: rgb(239, 182, 97);
     transform: scale(1.2);
 }
 #navbar img {
-    width: 25vh; height: auto; margin-left: 5vw;
+    width: 27vh; height: auto; margin-left: -20%;
 }
 
+/*Banner for Oslomet picture*/
+.banner-front {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 
-.banner-front{
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
 }
 
-
-.banner-front img{
-    filter: brightness(30%); /*https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/*/
+.banner-front img {
+    width: 100%;
     height: auto;
-    width: 100vw;
-    max-width: 100%;
-    overflow-x: hidden;
+    display: block;
 }
-.banner-text{
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    color: rgb(225, 225, 225);
-    padding: 1.5rem;
-    max-width: 40%;
+/*Text inside banner for oslomet*/
+
+.banner-text {
+    color: rgb(225, 225, 225); /*https://www.shecodes.io/athena/121718-how-to-use-transform-translate-50-50-to-center-an-element-in-css*/
+    padding: 1em; 
+    position: absolute; 
+    top: 70%; 
+    left: 40%; 
+    transform: translate(-50%, -50%); /*Helps the text stay in the center*/
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5vh;
+
 }
-.banner-text h1{
-    font-size: 2em;
+
+.banner-text h1 {
+    font-size: 4vw; 
     text-transform: uppercase;
     font-weight: bold;
-    width: 10em;
+    line-height: 1.2em;
+    margin-bottom: 0.7em;
 }
+
 
 
 
@@ -78,13 +99,10 @@
 body{
     display: flex;
     flex-direction: column;
-    padding: 20px; /*space from all edges of the page */
     margin: 0;
     align-items: center;
-    
     font-family: Arial, sans-serif;
 
- 
 }
 
 .icon-row {
