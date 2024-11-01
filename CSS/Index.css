@@ -172,11 +172,38 @@ details[open] summary{
 
 .hvaLærerDu{
   
+  background-color: #000000;
+  
+}
+
+.lær{
+  margin: 2em;
+  margin-left: 1em;
+ text-align:center;
+  position: center;
+  padding: 3em;
+  border-radius: 1em;
+  background-color: #fff9a7;
+  
+  
 }
 
 .vl {
+  
   border-left: 6px solid black;
-  height: 500px;
-  margin: 50%;
+  height: 100%;
+  margin: 10em;
+  position: relative;
+  margin-left: 35em;
+  border-color: #000000;
+  margin: 12em 15em 18em;
+  color: rgb(0, 0, 1);
+  margin-left: 35em;
 }
+
+.vi p{
+  margin-left: 50em;
+}
+
+ padding: 10em 12em;
 
