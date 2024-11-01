@@ -36,15 +36,17 @@ h3{
   color: #000;
   display: inline-table;
   background-color: whitesmoke;
-  height: 30%;
-  width: 20%;
-  background-color: rgba(253, 241, 114, 0.908);
-  border: 0.2em solid #0c0b0b;
+  height: 40em;
+  width: 20em;
+  background-color: rgba(255, 255, 255, 0.908);
+  border: 0.2em solid #020202;
   display:-ms-inline-grid;;
   cursor: pointer;
   box-sizing: content-box 0.5px;
-  justify-content: space-evenly;
   border-radius: 1em;
+  cursor: pointer;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 

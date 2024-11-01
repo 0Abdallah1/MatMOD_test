@@ -167,11 +167,16 @@ details[open] summary{
     padding-top: 10px;
     font-size: 1em;
     color: #555;
-    
-
-
-
 }
 
 
+.hvaLærerDu{
+  
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 500px;
+  margin: 50%;
+}
 
