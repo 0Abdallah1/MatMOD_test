@@ -34,7 +34,7 @@ h3{
   padding: 0.5% 1%;
   word-spacing: 2%;
   color: #000;
-  display: inline-table;
+  display: inline;
   background-color: whitesmoke;
   height: 40em;
   width: 20em;
@@ -47,6 +47,16 @@ h3{
   cursor: pointer;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.semester{
+  writing-mode:vertical-lr;
+  display:inline;
+  word-spacing: 1em;
+  transform:rotateX('angle')
+  background-color: #020202;
+  color: white;
+  padding: 0.3em;
 }
 
 
