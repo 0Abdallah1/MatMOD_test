@@ -26,48 +26,108 @@ h3{
 }
 
 
+.divider {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
 
-.beholder  { 
-  text-decoration: none;
-  font-size: 18px;
-  margin: 0.1% 2% 1%;
-  padding: 0.5% 1%;
-  word-spacing: 2%;
-  color: #000;
-  display: inline-table;
-  background-color: whitesmoke;
-  height: 40em;
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 0.3em;
+  background-color: rgb(23, 11, 11);
+  margin: 2em;
+}
+
+
+
+
+
+.innhold{ 
+  background-color: #000;
+  color: #ffffff;
+  justify-content: space-evenly;
+  padding: 1em;
+  margin-left: 7em;
+   height: fit-content;
   width: 20em;
-  background-color: rgba(255, 255, 255, 0.908);
-  border: 0.2em solid #020202;
-  display:-ms-inline-grid;;
+  text-align: left;
+  position: absolute;
   cursor: pointer;
-  box-sizing: content-box 0.5px;
-  border-radius: 1em;
-  cursor: pointer;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-
-hr.solid {
-  border-top: 0.01em solid #8d8d8d;
-}
-
-hr.rounded{
-  border-top: 0.1em solid black;
-  border-radius: 1em;
   
+  
+}
+
+  
+
+.beholder{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  justify-content: center;
+  grid-template-columns: 20em 20em 20em;
+  margin: 7em;
+}
+
+
+
+details{
+  position: center;
+  display: inline-flex;
+  margin-left: 10em;
+  position: center;
+  padding: 3em;
+  cursor: pointer;
+  scrollbar-highlight-color: blue;
+  
+}
+ 
+#emneGrid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10em;
+}
+
+.emneinnhold{
+  height: fit-content;
+  justify-content: baseline;
+  width: 20em;
+  background: rgba(255, 255, 75, 0.838);
+  margin: 1em;
+  text-align: center;
+
+}
+
+
+.semesterTitel{
+  writing-mode:vertical-lr;
+  display: inline-block;
+  background-color: #020202;
+  color: white;
+  width:fit-content; 
+  height:12em;;
+  transform: rotate(180);
+}
+
+.aGrid{
+  text-decoration:none;
+  color: #ffffff;
+  text-decoration: underline rgb(110, 177, 236);
+}
+
+#bacheloroppgave{
+  margin-left: 20em;
 }
 
 a{
   text-decoration:none;
-  color: #000;
-  text-decoration: underline rgb(218, 235, 250);
+  color: #000000;
+  text-decoration: underline rgb(110, 177, 236);
 }
 
 a:hover {
-  text-decoration: underline rgb(1, 2, 5);
+  text-decoration: underline rgb(180, 248, 44);
 
 }
 
@@ -76,12 +136,9 @@ dd{
   text-align: right;
   font-size: medium;
   font-weight: 150;
-  margin-bottom: 6%;
+  margin-bottom: 2em;
 }
 
-#andreår {
-width: 60%;
-height: 90%;}
 
 
 
