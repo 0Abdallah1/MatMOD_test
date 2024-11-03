@@ -141,6 +141,51 @@ body{
     line-height: 1.2;  
     color: #0b074b;
 }
+/*viktige informasjon*/
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.card{
+    
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition:transform 0.5s ease;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    text-align: left;
+}
+.card:hover{
+    transform: translateY(-0.7em);
+    box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.15);
+}
+.card-content{
+    font-size: 1.1em;
+   line-height: 1.6;
+}
+.section-header{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #1c086b;
+    text-align: center;
+    border-bottom:2px solid #280c97;
+    border-radius:0.5em ;
+    
+}
+
+
 
 <!--israa skrev-->
 
