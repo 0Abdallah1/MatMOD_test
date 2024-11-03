@@ -87,13 +87,14 @@ details{
   justify-content: center;
   align-items: center;
   min-height: 10em;
+  color: #ffffff;
 }
 
 .emneinnhold{
   height: fit-content;
   justify-content: baseline;
   width: 20em;
-  background: rgba(255, 255, 75, 0.838);
+  background: rgba(33, 33, 31, 0.838);
   margin: 1em;
   text-align: center;
 
@@ -113,7 +114,7 @@ details{
 .aGrid{
   text-decoration:none;
   color: #ffffff;
-  text-decoration: underline rgb(110, 177, 236);
+  text-decoration: underline rgb(215, 236, 110);
 }
 
 #bacheloroppgave{
@@ -122,12 +123,12 @@ details{
 
 a{
   text-decoration:none;
-  color: #000000;
-  text-decoration: underline rgb(110, 177, 236);
+  color: #ffffff;
+  text-decoration: underline rgb(236, 230, 110);
 }
 
 a:hover {
-  text-decoration: underline rgb(180, 248, 44);
+  text-decoration: underline rgb(123, 180, 245);
 
 }
 
