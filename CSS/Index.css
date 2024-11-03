@@ -34,7 +34,7 @@
 
 .nav-menu a {
     font-size: 1.2em;
-    color: rgb(229, 215, 245);
+    color: rgb(255, 255, 217);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -46,6 +46,7 @@
 }
 #navbar img {
     width: 27vh; height: auto; margin-left: -20%;
+    opacity; 10;
 }
 
 /*Banner for Oslomet picture*/
@@ -163,6 +164,11 @@ details[open] summary{
     color: #0073e6;
 }
 
+hr.rounded {
+  border-top: 8px solid #141313;
+  border-radius: 5px;
+}
+
 .content {
     padding-top: 10px;
     font-size: 1em;
@@ -183,8 +189,8 @@ details[open] summary{
   position: center;
   padding: 3em;
   border-radius: 1em;
-  background-color: #fff9a7;
-  
+  font-size: 2em;
+
   
 }
 
