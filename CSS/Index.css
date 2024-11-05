@@ -3,16 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Colors for the navigation menu*/
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*Start of nav*/
+/*Makes the menu start black at top and graduly get transparent*/
 #navbar {
-    background: linear-gradient(
-        to bottom, 
-        rgba(60, 61, 46, 0.7) 10%,       /* Black at top*/
-        rgba(60, 61, 46, 0.45) 40%,    
-        rgba(60, 61, 46, 0.25) 64%,
-        rgba(60, 61, 46, 0.1) 80%,      
-        rgba(255, 255, 255, 0) 100%    /* Fully transparent at the bottom */
-    );
+    background-color: #565656;
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
@@ -21,17 +21,18 @@
     z-index: 1;
     width: 100%;
 }
+/*Style the menu text and flex*/
 .nav-menu {
-    padding: 1em; /* Add responsive padding */
+    padding: 1em; 
     display: flex;
-    flex-wrap: wrap; /* wrap items in new line */
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     gap: 3em; 
     text-align: right;
 }
-
+/*menu text colors*/
 .nav-menu a {
     font-size: 1.2em;
     color: rgb(229, 215, 245);
@@ -39,15 +40,18 @@
     text-decoration: none;
     font-weight: bold;
 }
-
+/*transfrom menu to orange when hovering mouse*/
 .nav-menu a:hover {
     color: rgb(239, 182, 97);
     transform: scale(1.2);
 }
+/*scale logo*/
 #navbar img {
     width: 27vh; height: auto; margin-left: -20%;
 }
+/*End of nav*/
 
+/*Start of header*/
 /*Banner for Oslomet picture*/
 .banner-front {
     position: relative;
@@ -64,26 +68,25 @@
 }
 
 .banner-front img {
+    position: relative;
     width: 100%;
     height: auto;
     display: block;
 }
 /*Text inside banner for oslomet*/
-
+/*https://www.youtube.com/watch?v=Ne-uF4oY6pQ*/
 .banner-text {
-    color: rgb(225, 225, 225); /*https://www.shecodes.io/athena/121718-how-to-use-transform-translate-50-50-to-center-an-element-in-css*/
+    color: rgb(225, 225, 225);
     padding: 1em; 
     position: absolute; 
     top: 70%; 
     left: 40%; 
-    transform: translate(-50%, -50%); /*Helps the text stay in the center*/
-    border-radius: 0.5em;
+    transform: translate(-50%, -50%); /*https://www.shecodes.io/athena/121718-how-to-use-transform-translate-50-50-to-center-an-element-in-css*/
     display: flex;
     flex-direction: column;
     font-size: 3.5vh;
 
 }
-
 .banner-text h1 {
     font-size: 4vw; 
     text-transform: uppercase;
@@ -91,24 +94,37 @@
     line-height: 1.2em;
     margin-bottom: 0.7em;
 }
-
-
-
-
-/*(fatima)*/
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: center;
-    font-family: Arial, sans-serif;
-
+.apply-text {
+    background-color: #ffffff;
+    padding: 2em 2em;      
+    border-radius: 40%;
+    color: rgb(0, 0, 0);
+    display: inline-block;   
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    right: 5%;
 }
+.apply-text dl{
+    font-size: 1em; 
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 0.7em;
+}
+.apply-text a{
+    color: #4000ff;
+}
+/*End of header*/
+
+
+
+/*start og main*/
 
 .icon-row {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     width: 80%;
     max-width: 90%;
     gap: 0.5%;
@@ -117,12 +133,10 @@ body{
 /* Icon container styling */
 .icon-clock, .icon-calendar , .icon-graduation-cap , .icon-location-dot , .icon-building-columns , .icon-language , .icon-users-line{
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    flex-direction: column;
     text-align: center;  
     width: 20%;
    
-
 }
 
 /* Icon styling */
@@ -130,6 +144,7 @@ body{
     font-size: 4rem; 
     margin-bottom: 0.5em; 
     color: #0b074b;
+    position: relative;
 }
 
 /* Text styling for the paragraphs under icons */
@@ -141,7 +156,7 @@ body{
     color: #0b074b;
 }
 
-<!--israa skrev-->
+/*israa skriver her*/
 
 details{
     border: 1px solid #ccc;
