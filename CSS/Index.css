@@ -35,7 +35,7 @@ body{
 /*menu text colors*/
 .nav-menu a {
     font-size: 1.2em;
-    color: rgb(255, 255, 217);
+    color: rgb(229, 215, 245);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -48,7 +48,6 @@ body{
 /*scale logo*/
 #navbar img {
     width: 27vh; height: auto; margin-left: -20%;
-    opacity: 10;
 }
 /*End of nav*/
 
@@ -95,7 +94,6 @@ body{
     line-height: 1.2em;
     margin-bottom: 0.7em;
 }
-<<<<<<< HEAD
 .apply-text {
     background-color: #ffffff;
     padding: 2em 2em;      
@@ -106,17 +104,6 @@ body{
     position: absolute;
     top: 60%;
     right: 5%;
-=======
-
-
-/*(fatima)*/
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: Arial, sans-serif;
-
->>>>>>> 6b86bfe77bc4f305f4445424ebfaa6a12ddab7dd
 }
 .apply-text dl{
     font-size: 1em; 
@@ -127,6 +114,19 @@ body{
 }
 .apply-text a{
     color: #4000ff;
+}
+.oslomet-content{
+
+    color: rgb(255, 220, 243); 
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+.oslomet-content li{
+    font-size: large;
+    list-style: none;
+    display: inline-block;  
+    justify-content: space-between;
 }
 /*End of header*/
 
