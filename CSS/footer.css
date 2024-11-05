@@ -18,7 +18,9 @@
     margin-bottom: 1%;
  }
 
-.grid-container{
+
+
+ .section{
     width: 90%;
     color: rgb(25, 23, 23);
     display: flex;
@@ -28,23 +30,19 @@
     align-items: center;
 }
 
+
+
+
+
+
+.icon{
+        width: 4vh;
+        height: auto;
+    }
+
 h2{
     color: black;
     font-size: 120%;
-}
-
-.icon-container {
-    color: rgb(230, 221, 221);
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    gap: 6%;
-    margin-right: 60%;
-}
-    
-.icon{
-    width: 4vh;
-    height: auto;
 }
 
 .footermap, .google-maps {
@@ -60,13 +58,5 @@ h2{
     bottom: 5%;
 }
     
-
-.adresstext {
-flex-direction: row;
-display: flex;
-margin-left:auto;
-gap: 4vh;
-}
-
 
 /*w3schools flex responsive*/
