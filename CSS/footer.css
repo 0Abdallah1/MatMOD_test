@@ -1,14 +1,18 @@
 
 .footer {
     display: flex;
-    background-color: rgba(249, 147, 147, 0.45);
-    padding: 2%;
+    background-color: rgba(79, 71, 71, 0.45);
+    padding: 1% 2%;
     width: 100%;
     overflow-x: hidden;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20%;
+    flex-direction: row;
+    gap: 3%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     position: relative;
+    bottom: 0;
+
 }
 
 .footerlogo {
@@ -18,38 +22,28 @@
     margin-bottom: 1%;
  }
 
-.grid-container{
-    width: 100%;
-    color: rgb(25, 23, 23);
+.section{
+    width: 90%;
+    color: black;
     display: flex;
     flex-direction: column;
-    gap: 1.5vh;
-    margin-left:5%;
+    gap: 3vh;
     margin: 1%;
-    
+    align-items: flex-start;
+    flex: 1;
+    min-width: 200px;
+    line-height: 1.6;
 }
+ 
+.icon{
+        width: 4vh;
+        height: auto;
+    }
 
-h2{
+.h2{
     color: black;
     font-size: 120%;
-}
-
-.icon-container {
-    width: 100%;
-    color: rgb(230, 221, 221);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 3%;
-    margin-left:5%;
-    margin: 1%;
-    
-    
-}
-
-.icon-container i{
-    font-size: 1.3em;
+    margin-bottom: 1vh;
 }
 
 .footermap, .google-maps {
@@ -58,18 +52,16 @@ h2{
     justify-content: flex-end;
     display: flex;
     margin-left: auto;
-    top: 3vh;
+    top: 0.5vh;
     right: 0.5%;
-    align-items: flex-start;
-    position: absolute;
+    align-items:flex-end;
+    position: relative;
 }
 
-.adresstext {
-flex-direction: row;
-display: flex;
-margin-left:auto;
-gap: 15vh;
-}
 
+.details summary content a{
+    color: black;
+    text-decoration: none;
+}
 
 /*w3schools flex responsive*/
