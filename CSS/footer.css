@@ -22,27 +22,25 @@
     margin-bottom: 1%;
  }
 
- .footer section{
+.section{
     width: 90%;
     color: black;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 3vh;
     margin: 1%;
     align-items: flex-start;
     flex: 1;
     min-width: 200px;
     line-height: 1.6;
-
 }
  
 .icon{
         width: 4vh;
         height: auto;
-        
     }
 
-.footer h2{
+.h2{
     color: black;
     font-size: 120%;
     margin-bottom: 1vh;
@@ -58,7 +56,6 @@
     right: 0.5%;
     align-items:flex-end;
     position: relative;
-    
 }
 
 footer a{

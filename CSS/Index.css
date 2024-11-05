@@ -182,30 +182,6 @@ body{
     
 }
 
-
-
-<!--israa skrev-->
-
-details{
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
-   
-}
-
-summary{
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-
-}
-
-details[open] summary{
-    color: #0073e6;
-}
-
 hr.rounded {
   border-top: 8px solid #141313;
   border-radius: 5px;
@@ -255,3 +231,17 @@ hr.rounded {
 
 
 
+/*israa skrev*/
+.text-column {
+    padding: 1%;
+    flex: 1;
+}
+
+.h2{
+    color: black;
+    text-align: center;
+    font: 1.5em;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin-top: 0;
+}
