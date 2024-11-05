@@ -34,7 +34,7 @@
 
 .nav-menu a {
     font-size: 1.2em;
-    color: rgb(229, 215, 245);
+    color: rgb(255, 255, 217);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -46,6 +46,7 @@
 }
 #navbar img {
     width: 27vh; height: auto; margin-left: -20%;
+    opacity; 10;
 }
 
 /*Banner for Oslomet picture*/
@@ -137,6 +138,51 @@ body{
     line-height: 1.2;  
     color: #0b074b;
 }
+/*viktige informasjon*/
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.card{
+    
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition:transform 0.5s ease;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    text-align: left;
+}
+.card:hover{
+    transform: translateY(-0.7em);
+    box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.15);
+}
+.card-content{
+    font-size: 1.1em;
+   line-height: 1.6;
+}
+.section-header{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #1c086b;
+    text-align: center;
+    border-bottom:2px solid #280c97;
+    border-radius:0.5em ;
+    
+}
+
+
 
 <!--israa skrev-->
 
@@ -160,14 +206,51 @@ details[open] summary{
     color: #0073e6;
 }
 
+hr.rounded {
+  border-top: 8px solid #141313;
+  border-radius: 5px;
+}
+
 .content {
     padding-top: 10px;
     font-size: 1em;
     color: #555;
-    
+}
 
 
+.hvaLærerDu{
+  
+  background-color: #000000;
+  
+}
 
+.lær{
+  margin: 2em;
+  margin-left: 1em;
+ text-align:center;
+  position: center;
+  padding: 3em;
+  border-radius: 1em;
+  font-size: 2em;
+
+  
+}
+
+.vl {
+  
+  border-left: 6px solid black;
+  height: 100%;
+  margin: 10em;
+  position: relative;
+  margin-left: 35em;
+  border-color: #000000;
+  margin: 12em 15em 18em;
+  color: rgb(0, 0, 1);
+  margin-left: 35em;
+}
+
+.vi p{
+  margin-left: 400em;
 }
 
 
