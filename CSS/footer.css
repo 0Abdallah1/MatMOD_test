@@ -58,9 +58,23 @@
     position: relative;
 }
 
-.footer li{
+.footer  a{
     color: black;
+    text-decoration: black;
 }
+.footer li{
+    line-height: 1.6;
+    list-style: none;
+}
+
+.footer .adressinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 1.5em;
+}
+
 
 
 
