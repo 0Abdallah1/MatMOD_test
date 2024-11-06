@@ -270,3 +270,73 @@ details[open] summary{
     color: black;
     text-decoration: none;
 }
+
+
+
+/* Hva skal du lære? med info om tema i læreplanen */
+
+.LearningOutcome{
+  background-color: #2222; 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 30vh;
+  gap: 2rem;
+  padding: 2em;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 30%;
+  margin: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 0.1em 0.5em 0.1em;
+  padding: 0;
+  transition-timing-function: ease ;
+  transition-duration: 0.5s;
+}
+
+/* */
+
+
+
+.box:hover{
+  transform: scale(1.1);
+}
+
+/*.box p{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}*/
+
+.LearningOutcome img {
+  position: relative;
+  vertical-align: top;
+  max-width: 30%;
+  transition: 0.5s ease;
+}
+
+
+.
+
+button { /*Fathima*/
+  background-color: rgb(194, 229, 255);
+  border-radius: 1%;
+  color: black;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  font-size: 16px;
+  margin: 0em 0em;
+  cursor: pointer;
+}
+
