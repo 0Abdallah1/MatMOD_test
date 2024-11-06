@@ -12,7 +12,7 @@ body{
 /*Start of nav*/
 /*Makes the menu start black at top and graduly get transparent*/
 #navbar {
-    background-color: #525834;
+    background-color: #323833;
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
@@ -35,7 +35,7 @@ body{
 /*menu text colors*/
 .nav-menu a {
     font-size: 1.2em;
-    color: rgb(229, 215, 245);
+    color: rgb(244, 245, 215);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -129,6 +129,29 @@ body{
     justify-content: space-between;
 }
 
+/*icon Fathima and Biranti styles*/
+
+/*Styles of all the icons inside the buttons with their texts*/
+button{
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  background-color: #000000;
+  border-radius: 1rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1em;
+  padding: 2em;
+}
+
+.fa-regular fa-clock{
+  padding: 2em;
+  margin: 10em;
+}
+
 
 /*End of header*/
 
@@ -191,40 +214,7 @@ hr.rounded {
 }
 
 
-.hvaLærerDu{
-  
-  background-color: #000000;
-  
-}
 
-.lær{
-  margin: 2em;
-  margin-left: 1em;
- text-align:center;
-  position: center;
-  padding: 3em;
-  border-radius: 1em;
-  font-size: 2em;
-
-  
-}
-
-.vl {
-  
-  border-left: 6px solid black;
-  height: 100%;
-  margin: 10em;
-  position: relative;
-  margin-left: 35em;
-  border-color: #000000;
-  margin: 12em 15em 18em;
-  color: rgb(0, 0, 1);
-  margin-left: 35em;
-}
-
-.vi p{
-  margin-left: 400em;
-}
 
 
 
@@ -284,23 +274,25 @@ details[open] summary{
   width: 100%;
   padding-left: 14rem;
   padding-right: 14rem;
+  box-sizing: border-box;
 }
 
 .box{
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 25rem;
-  width: 30%;
+  width: 80%;
   margin: 1.2rem;
   overflow: hidden;
   box-shadow: 0 0.1em 0.5em 0.1em;
-  padding: 0;
+  padding: 1;
   transition-timing-function: ease ;
   transition-duration: 0.5s;
 }
 
-/* */
 
 
 
@@ -308,32 +300,32 @@ details[open] summary{
   transform: scale(1.1);
 }
 
-/*.box p{
+.box p{
+  overflow-wrap: break-word;
+  margin: 1rem 0;
   font-size: 1rem;
   line-height: 1.2rem;
-}*/
+}*
 
 .LearningOutcome img {
   position: relative;
   vertical-align: top;
-  max-width: 30%;
+  max-width: 100%;
+  height: auto;
+  display: block;
   transition: 0.5s ease;
 }
 
 
-.
-
-button { /*Fathima*/
-  background-color: rgb(194, 229, 255);
-  border-radius: 1%;
-  color: black;
-  padding: 1em 2em;
-  text-align: center;
+.card-content a {
   text-decoration: none;
-  display: inline;
-  position: relative;
-  font-size: 16px;
-  margin: 0em 0em;
-  cursor: pointer;
+  color: #000;
+   text-decoration: underline #ffe071;
+
+  
 }
 
+.card-content a:hover{
+text-decoration: underline #000000;
+
+}
