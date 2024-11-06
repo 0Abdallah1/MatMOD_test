@@ -246,6 +246,7 @@ hr.rounded {
 
 
 
+
 /*israa skriver her*/
 
 details{
@@ -268,7 +269,7 @@ details[open] summary{
     color: black
 }
 
-a{
+.content a{
     color: black;
     text-decoration: none;
 }

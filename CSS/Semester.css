@@ -19,12 +19,11 @@ h4 {
 
 h3{
   position:center;
-  float:inline-start 
+  float:inline-start; 
   flex: 1%;
   margin: 0em;
   padding: 2%;
 }
-
 
 .divider {
   font-size: 2em;
@@ -50,8 +49,8 @@ h3{
   justify-content: space-evenly;
   padding: 1em;
   margin-left: 7em;
-   height: fit-content;
-  width: 20em;
+  height: fit-content;
+  width: 15em;
   text-align: left;
   position: absolute;
   cursor: pointer;
@@ -94,7 +93,7 @@ details{
   height: fit-content;
   justify-content: baseline;
   width: 20em;
-  background: rgba(33, 33, 31, 0.838);
+  background: rgba(44, 44, 43, 0.838);
   margin: 1em;
   text-align: center;
 
