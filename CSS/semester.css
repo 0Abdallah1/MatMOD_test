@@ -1,0 +1,143 @@
+<<<<<<< HEAD
+=======
+h4 {
+  margin-left: 1em;
+  border-radius: 0.1em;
+
+}
+
+h3{
+  position:center;
+  float:inline-start; 
+  flex: 1%;
+  margin: 0em;
+  padding: 2%;
+}
+
+.divider {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+/* comment */
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 0.3em;
+  background-color: rgb(23, 11, 11);
+  margin: 2em;
+}
+
+
+
+
+.innhold{ 
+  background-color: #000;
+  color: #ffffff;
+  justify-content: space-evenly;
+  padding: 1em;
+  margin-left: 7em;
+   height: fit-content;
+  width: 15em;
+  text-align: left;
+  position: absolute;
+  cursor: pointer;
+  
+  
+}
+
+  
+
+.beholder{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  justify-content: center;
+  grid-template-columns: 20em 20em 20em;
+  margin: 7em;
+}
+
+
+
+details{
+  position: center;
+  display: inline-flex;
+  margin-left: 10em;
+  position: center;
+  padding: 3em;
+  cursor: pointer;
+  scrollbar-highlight-color: blue;
+  
+}
+ 
+#emneGrid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10em;
+  color: #ffffff;
+}
+
+.emneinnhold{
+  height: fit-content;
+  justify-content: baseline;
+  width: 20em;
+  background: rgba(44, 44, 43, 0.838);
+  margin: 1em;
+  text-align: center;
+
+}
+
+
+.semesterTitel{
+  writing-mode:vertical-lr;
+  display: inline-block;
+  background-color: #020202;
+  color: white;
+  width:fit-content; 
+  height:12em;;
+  transform: rotate(180);
+}
+
+.aGrid{
+  text-decoration:none;
+  color: #ffffff;
+  text-decoration: underline rgb(215, 236, 110);
+}
+
+#bacheloroppgave{
+  margin-left: 20em;
+}
+
+a{
+  text-decoration:none;
+  color: #ffffff;
+  text-decoration: underline rgb(236, 230, 110);
+}
+
+a:hover {
+  text-decoration: underline rgb(123, 180, 245);
+
+}
+
+
+dd{
+  text-align: right;
+  font-size: medium;
+  font-weight: 150;
+  margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 537197f8e90ff04fc040173cb4c64d4d92a1ff8c
