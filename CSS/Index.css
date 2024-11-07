@@ -10,7 +10,6 @@ body{
     font-family: Arial, sans-serif;
 }
 /*Start of nav*/
-/*Makes the menu start black at top and graduly get transparent*/
 #navbar {
     background-color: #525834;
     display: flex;
@@ -135,6 +134,8 @@ body{
 
 
 /*start og main*/
+
+
 
 /*viktige informasjon*/
 .card-container{
