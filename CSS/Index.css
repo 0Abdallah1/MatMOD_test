@@ -243,12 +243,6 @@ text-decoration: underline #000000;
    line-height: 1.6;
 }
 
-.card-content-main{
-    font-size: 1.1em;
-    line-height: 1.5;
-    padding-top: 70px;
-}
-
 .card2{
     width: 90%;
     background-color: #f4f4f4;
@@ -258,6 +252,12 @@ text-decoration: underline #000000;
     box-sizing: border-box;
     padding: 3rem;
     margin: 0 auto;
+}
+
+.card-content-main{
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-top: 70px;
 }
 
 .linker{
