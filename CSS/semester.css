@@ -1,34 +1,8 @@
 <<<<<<< HEAD
 =======
-h4 {
-  margin-left: 1em;
-  border-radius: 0.1em;
 
 }
 
-h3{
-  position:center;
-  float:inline-start; 
-  flex: 1%;
-  margin: 0em;
-  padding: 2%;
-}
-
-.divider {
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-}
-
-/* comment */
-
-.divider::before, .divider::after {
-  flex: 1;
-  content: '';
-  padding: 0.3em;
-  background-color: rgb(23, 11, 11);
-  margin: 2em;
-}
 
 
 
