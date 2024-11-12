@@ -349,3 +349,27 @@ hr.rounded {
 .card-content a:hover{
 text-decoration: underline #000000;
 }
+
+
+.accesibility-paragraf{
+    margin-left: auto;
+    width: 60%;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.sketch1 .sketch2 .sketch3 .sketch4{
+width: 100%;
+height: 1%;
+
+}
+
+.heading-accesibility{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 0%;
+
+}
