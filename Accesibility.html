@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales initical viewport to the devices scale-->
+    <title>Accessibility</title> <!--title for browser-->
+    <!--css file-->
+    <link rel="stylesheet" type="text/CSS" href="CSS/Index.css">
+    <link rel="stylesheet" type="text/CSS" href="CSS/Semester.css"> 
+    <link rel="stylesheet" type="text/CSS" href="CSS/footer.css"> <!--link to css file-->
+
+    
+</head>
+
+<body class="accessibility-body">
+
+  <!--NAVIGATION-->
+  <nav id="navbar" class="navigate">
+    <a href="index.html"><img src="Images/logo.png" alt="Oslo Metropolitan University"></a> <!--Oslomets logo-->
+    <ul class="nav-menu"> <!--Class for menu-->
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="Activity_page.html">Activity Page</a></li>
+      <li><a href="Github.html">Github</a></li>
+    </ul>
+    </nav>
+
+
+
+  <header>
+
+  </header>
+
+<main class="accessibility-main">
+    <h1 class="heading-accesibility">Accessibility</h1>
+    <h2 class="heading-accesibility">Planning phase</h2>
+    <p class="accesibility-paragraf">In building our website, accessibility was a primary focus to make sure it's usable for everyone. 
+      We combined automated testing with manual checks to ensure our design choices went beyond what automated tools can catch. 
+      We aimed for high contrast between text and background colors, following WCAG guidelines, to support users with low vision or color blindness.
+      Instead of a fully white background, we used soft colors in different sections to reduce eye strain. 
+      We used relative units like rem and em for font sizes, allowing users to resize text easily. 
+      To make the site adapt well across devices, we used fluid units like vh, vw, and percentages instead of fixed pixels. 
+      This approach helps our site look good on any screen size.
+      Alt Text and Heading Structure: We added descriptive alt text for all images so that screen readers can convey the visual content to users who can't see it. 
+      Our heading tags h1, h2, h3 are also structured in a logical order to improve navigation for screen readers.
+     
+    </p>
+
+    <section class="accessibility-img">
+      <picture>
+        <img class="sketch1" src="/Images/sketchstart.jpg" alt="The first sketch of the homepage">
+      </picture>
+      <figcaption>The first sketch of the homepage. Private photo</figcaption>
+    
+      <picture>
+        <img class="sketch2" src="/Images/sketchheader.jpg" alt="The final sketch of the homepage">
+      </picture>
+      <figcaption>The final sketch of the homepage. Private photo</figcaption>
+      
+      <picture> 
+        <img class="sketch3" src="/Images/sketchmain.jpg" alt="The final sketch of the homepage">
+      </picture>
+        <figcaption>The final sketch of the homepage. Private photo</figcaption>
+    
+
+    <picture>
+      <img class="sketch4" src="/Images/sketchfooter.jpg" alt="The final sketch of the homepage">
+      </picture>
+        <figcaption>The final sketch of the homepage. Private photo</figcaption>
+    </section>
+   
+
+
+
+</main>
+
+ <!--source: https://www.w3schools.com/css/css_grid.asp-->
+    <!--FOOTER-->
+<footer class="footer">
+        <div class="footerlogo">
+          <img class="footer-logo" src="	https://www.oslomet.no/build/images/logo-footer.svg" alt="Oslo Metropolitan Univeristy - storbyuniversitet logo">
+        </div>
+  
+        <section class="footerlinks">
+          <h2>Om oss</h2>
+            <ul>
+              <li><a href="https://www.oslomet.no/om/ansatteoversikt" target="_blank">Ansatteoversikt</a></li>
+              <li><a href="https://www.oslomet.no/om/kontakt" target="_blank">Kontakt oss</a></li>
+              <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" target="_blank">Arrangementsoversikt</a></li>
+              <li><a href="https://www.oslomet.no/om/ledige-stillinger" target="_blank">Ledige stillinger</a></li>
+              <li><a href="https://www.oslomet.no/om/pressekontakt" target="_blank">Pressekontakt</a></li>
+              <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar" target="_blank">Personvernerklæring og informasjonskapslar</a></li>
+            </ul>
+        </section>
+  
+        <section class="footerlinks">
+          <h2>Nyttige lenker</h2>
+            <ul>
+              <li><a href="https://www.oslomet.no/en" target="_blank">English</a></li>
+              <li><a href="https://www.oslomet.no/alumni" target="_blank">Alumni</a></li>
+              <li><a href="https://www.oslomet.no/om/for-ansatte" target="_blank">For ansatte</a></li>
+              <li><a href="https://www.oslomet.no/om/for-studenter" target="_blank">For studenter</a></li>
+              <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering" target="_blank">Tilgjengelegheitserklæring</a></li>
+              <li><a href="" target="_blank">Admin</a></li>
+            </ul>
+        </section>
+      
+        <section>
+          <h2> Sosiale medier </h2>
+            <p>
+              <a target="_blank" href="https://no.linkedin.com/school/oslomet/" ><img class="icon" src="Images/logolinkedin.png" alt="Oslo Metropolitan University"></a>
+              <a target="_blank" href="https://www.facebook.com/oslomet/" ><img class="icon" src="Images/logofacebook.png" alt="Oslo Metropolitan University"></a>
+              <a target="_blank" href="https://x.com/oslomet" ><img class="icon" src="Images/logotwitter.png" alt="Oslo Metropolitan University"></a>
+              <a target="_blank" href="https://www.instagram.com/oslomet/?hl=nb" ><img class="icon" src="Images/logoinstagram.png" alt="Oslo Metropolitan University"></a>
+            </p>
+        </section>
+  
+        <div class="footermap">
+          <div class="google-maps">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.91651848285545!2d10.7328447!3d59.9210891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7913e2a529%3A0x15d03622a70f16df!2sPilestredet%2046%2C%200167%20Oslo!5e0!3m2!1sno!2sno!4v1729860590154!5m2!1sno!2sno" 
+          width="450" 
+          height="310" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+  
+        <section >
+          <adress class="adressinfo">
+            <p>Postboks 4, St. Olavs plass </p>
+            <p>0130 Oslo</p>
+            <p>Tlf.: 67 23 50 00</p>
+          </adress>
+        </section>
+    
+  
+      </footer>
+  
+  </body>
+  
+  </html>

@@ -208,11 +208,9 @@ body{
     padding: 2em;
     margin: 0 auto;
     box-sizing: border-box;
-
 }
 
 .card{
-    
     width: 30%;
     background-color: #f4f4f4;
     border-radius: 0.5rem;
@@ -223,22 +221,59 @@ body{
     padding: 1.5rem;
     text-align: left;
 }
+ 
+
+.card-content a {
+  text-decoration: none;
+  color: #000;
+   text-decoration: underline #ffe071;
+}
+
+.card-content a:hover{
+text-decoration: underline #000000;
+}
+
 .card:hover{
     transform: translateY(-0.7em);
     box-shadow: 0 0.375em 0.75em rgba(0, 0, 0, 0.15);
 }
+
 .card-content{
     font-size: 1.1em;
    line-height: 1.6;
 }
+
+.card2{
+    width: 90%;
+    background-color: #f4f4f4;
+    border-radius: 3rem;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.card-content-main{
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-top: 70px;
+}
+
+.linker{
+    color: black;
+    text-decoration: none;
+}
+
 .section-header{
-    font-size: 1.75rem;
-    font-weight: bold;
+    font-size: 2rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
     color: #1c086b;
     text-align: center;
     border-bottom:2px solid #280c97;
-    border-radius:0.5em ;
-    
+    border-radius:0.5em ;  
 }
 
 hr.rounded {
@@ -257,11 +292,74 @@ hr.rounded {
 
 
 
-/*israa skrev*/
-.text-column {
-    padding: 1%;
-    flex: 1;
+/* Hva skal du lære? med info om tema i læreplanen */
+
+
+
+.title {
+  cursor: pointer;
+  font-size: 1.6rem;
 }
+
+.LearningOutcome {
+      display: flex;
+      gap: 2rem;
+      margin-left: 8rem;
+
+}
+
+.box {
+  display: inline-table;
+  justify-content: baseline;
+  border-radius: 2em;
+  width: 20em;
+  background-color: #f9f9f9;
+  border: 0.1em solid #ccc;
+  text-align: center;
+}
+
+
+.box p{
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+br{
+  line-height: 2rem;
+}
+
+.LearningOutcome img {
+  margin-top: 1rem;
+  max-width: 78%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.emneInfo {
+    text-align: center;             /* Centers the text horizontally */
+    font-size: 1.2em;               /* Sets a readable font size */
+    font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+    line-height: 1.6;               /* Adjusts the line height for better readability */
+    margin: 2em auto;              /* Adds margin above and below, centers horizontally */
+    padding: 1em 2em;             /* Adds padding inside the paragraph */
+    max-width: 60%; 
+    background-color: #e0e0e0;                /* Limits the width of the paragraph for better control */
+    border-radius: 8px;             /* Rounds the corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    color: #333;                    /* Dark text color for readability */
+    transition: all 0.3s ease;      /* Smooth transition for hover effects */
+}
+
+.emneInfo:hover {
+    background-color: #fbffdf;      /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly increases shadow on hover */
+}
+
+
+
+/*israa skrev*/
 
 .h2{
     color: black;
@@ -272,77 +370,22 @@ hr.rounded {
     margin-top: 0;
 }
 
+/* Laget linje mellom tittel, og skapper mellomrom mellom uliek sections*/
 
-
-
-
-/*israa skriver her*/
-
-details{
-    border: 1px solid black;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f9f9f9;
-   
-}
-
-summary{
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-
-}
-
-details[open] summary{
-    color: black
-}
-
-.content a{
-    color: black;
-    text-decoration: none;
-}
-
-
-
-/* Hva skal du lære? med info om tema i læreplanen */
-
-.LearningOutcome{
-  background-color: #2222; 
-  align-items: center;
+.divider {
+  font-size: 2em;
   display: flex;
-  justify-content: center;
-  min-height: 30vh;
-  gap: 2rem;
-  padding: 2em;
-  box-sizing: border-box;
-  width: 100%;
-  padding-left: 14rem;
-  padding-right: 14rem;
-  box-sizing: border-box;
-}
-
-.box{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  height: 25rem;
-  width: 80%;
-  margin: 1.2rem;
-  overflow: hidden;
-  box-shadow: 0 0.1em 0.5em 0.1em;
-  padding: 1;
-  transition-timing-function: ease ;
-  transition-duration: 0.5s;
 }
 
+/* comment */
 
-
-
-.box:hover{
-  transform: scale(1.1);
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 0.3em;
+  background-color: rgb(23, 11, 11);
+  margin: 2em;
 }
 
 .box p{
@@ -350,7 +393,13 @@ details[open] summary{
   margin: 1rem 0;
   font-size: 1rem;
   line-height: 1.2rem;
-}*
+}
+
+.LearningOutcome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .LearningOutcome img {
   position: relative;
@@ -361,16 +410,96 @@ details[open] summary{
   transition: 0.5s ease;
 }
 
-
 .card-content a {
   text-decoration: none;
   color: #000;
    text-decoration: underline #ffe071;
-
-  
 }
 
 .card-content a:hover{
 text-decoration: underline #000000;
+}
+
+
+.accesibility-paragraf{
+    margin-left: auto;
+    width: 60%;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.sketch1 .sketch2 .sketch3 .sketch4{
+width: 100%;
+height: 1%;
 
 }
+
+.heading-accesibility{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 0%;
+
+}
+.semester-view {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1em; 
+    margin-top: 3em; 
+  }
+  
+  .semester-view h4 {
+    padding: 1em 2em; 
+    font-size: 1.2em;
+    background-color: #3588e7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  .innhold{ 
+    background-color: #000;
+    color: #ffffff;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-left: 7em;
+     height: fit-content;
+    width: 15em;
+    text-align: left;
+    position: absolute;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 0.3rem;
+  }
+  
+  .semester-container h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: #0072b1;
+  }
+  
+  /* Table Styling */
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+  }
+  
+  .course-table td {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  .course-table a {
+    color: #00509e;
+    text-decoration: none;
+  }
+  
+  .course-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
