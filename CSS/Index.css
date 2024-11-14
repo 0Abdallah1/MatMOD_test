@@ -200,6 +200,7 @@ body{
 
 /*viktige informasjon*/
 .card-container{
+    margin: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -292,22 +293,40 @@ hr.rounded {
 
 
 
-/* Hva skal du lære? med info om tema i læreplanen */
+/* Info about the 3 Topics in the curriculum */
+
+/*Creats a solid section divider 
+source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
+
+ hr.solid {
+  border-top: 2px solid #000000;
+}
+
+/* Creats a section and it's style around the learninginfo */
+
+.learningInfo{
+  padding: 3rem;
+  margin: 4rem;
+  font-size: 1.4rem;
+  background-color: #ededed;
+ }
 
 
-
-.title {
+ /*Subtitles of the three topics within the curriculum */
+.subtitle {
   cursor: pointer;
   font-size: 1.6rem;
 }
 
+ /*It's the container of the box-items*/
 .LearningOutcome {
-      display: flex;
-      gap: 2rem;
-      margin-left: 8rem;
+    padding: 2rem;
+    margin: 0rem 3.8rem  0.1rem;
+    width: 90%;
 
 }
 
+/*The boxes have samelength despite different content size. The boxes are inline and have fixed width */
 .box {
   display: inline-table;
   justify-content: baseline;
@@ -318,7 +337,7 @@ hr.rounded {
   text-align: center;
 }
 
-
+/*syles the box's text to have padding, and margin, plus text size and line height*/
 .box p{
   padding: 1rem;
   margin: 1rem 0;
@@ -326,36 +345,14 @@ hr.rounded {
   line-height: 1.5rem;
 }
 
-br{
-  line-height: 2rem;
-}
-
+/*Style of the images inside the boxes*/
 .LearningOutcome img {
   margin-top: 1rem;
   max-width: 78%;
   height: auto;
-  transition: 0.5s ease;
 }
 
-.emneInfo {
-    text-align: center;             /* Centers the text horizontally */
-    font-size: 1.2em;               /* Sets a readable font size */
-    font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
-    line-height: 1.6;               /* Adjusts the line height for better readability */
-    margin: 2em auto;              /* Adds margin above and below, centers horizontally */
-    padding: 1em 2em;             /* Adds padding inside the paragraph */
-    max-width: 60%; 
-    background-color: #e0e0e0;                /* Limits the width of the paragraph for better control */
-    border-radius: 8px;             /* Rounds the corners for a softer look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    color: #333;                    /* Dark text color for readability */
-    transition: all 0.3s ease;      /* Smooth transition for hover effects */
-}
 
-.emneInfo:hover {
-    background-color: #fbffdf;      /* Light background for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly increases shadow on hover */
-}
 
 
 
@@ -480,7 +477,7 @@ height: 1%;
   .semester-container h3 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #0072b1;
+    color: #003bb1;
   }
   
   /* Table Styling */
