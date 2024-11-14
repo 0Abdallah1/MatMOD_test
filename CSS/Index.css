@@ -420,29 +420,6 @@ br{
 text-decoration: underline #000000;
 }
 
-
-.accesibility-paragraf{
-    margin-left: auto;
-    width: 60%;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 2.5rem;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-}
-
-.sketch1 .sketch2 .sketch3 .sketch4{
-width: 100%;
-height: 1%;
-
-}
-
-.heading-accesibility{
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-bottom: 0%;
-
-}
 .semester-view {
     display: flex;
     flex-direction: column; 
@@ -503,3 +480,59 @@ height: 1%;
   .course-table tr:nth-child(even) {
     background-color: #f9f9f9;
   }
+
+
+ 
+  /*Accessibility*/
+  .accessibility-body{
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin-top: 10%;
+  }
+
+  .accesibility-paragraf{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 60%;
+    width: 90%;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+  .accessibility-img{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .sketch-start, .sketch-header, .sketch-main, .sketch-footer{
+    margin-right: auto;
+    width: 120%;
+    height: 90%;
+    margin-left: auto;
+    display: block;
+    margin: 0;
+  }
+
+ @media all and (min-width: 800px){
+  .main{
+    flex: 3;
+  }
+  .aside1{
+    order: 1;
+  }
+  .aside2{
+    order: 2;
+  }
+  .main{
+    order: 2;
+  }
+ }
+ @media all and (min-width: 600px){
+  .aside{
+    flex: 1;
+  }
+ }
