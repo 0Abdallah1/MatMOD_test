@@ -1,4 +1,6 @@
 
+/* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
+/*Footer*/
 .footer {
     display: flex;
     background-color: rgba(79, 71, 71, 0.45);
@@ -78,4 +80,3 @@
 
 
 
-/*w3schools flex responsive*/
