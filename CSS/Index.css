@@ -673,7 +673,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   height: auto;
 }
 
-
 /*Footer section headings with increased font size and margin*/
 .footerlinks h2{
   color: black;
@@ -693,12 +692,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   position: relative;
 }
 
-/*Footer links styled with black text and no underlines*/
-.footer  a{
-  color: black;
-  text-decoration: black;
-}
-
 /*List items in footer with spacing and no bullets*/
 .footer li{
   line-height: 1.6;
@@ -713,7 +706,3 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   gap: 2vw;
   padding: 1.5em;
 }
-
-
-
-
