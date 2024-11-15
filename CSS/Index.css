@@ -238,15 +238,8 @@ body{
     text-align: left;
 }
  
-.card-content a {
-  text-decoration: none;
-  color: #000;
-   text-decoration: underline #ffe071;
-}
 
-.card-content a:hover{
-text-decoration: underline #000000;
-}
+
 
 .card:hover{
     transform: translateY(-0.7em);
@@ -411,13 +404,16 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   transition: 0.5s ease;
 }
 
-.card-content a .footer a {
+/* General link style for all*/
+
+a {
   text-decoration: none;
   color: #000;
   text-decoration: underline #ffe071;
+  line-height: 1.9rem;
 }
 
-.card-content a:hover{
+a:hover{
   text-decoration: underline #000000;
 }
 
