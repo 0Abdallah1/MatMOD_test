@@ -12,7 +12,7 @@
     
 </head>
 
-<body class="accessibility-body">
+<body>
 
   <!--NAVIGATION-->
   <nav id="navbar" class="navigate">
@@ -21,18 +21,19 @@
       <li><a href="index.html">Home</a></li> 
       <li><a href="Activity_page.html">Activity Page</a></li>
       <li><a href="Github.html">Github</a></li>
+      <li><a href="Accesibility.html">Accessibility</a></li>
     </ul>
     </nav>
 
 
 
   <header>
-
   </header>
 
-<main class="accessibility-main">
-    <h1 class="heading-accesibility">Accessibility</h1>
-    <h2 class="heading-accesibility">Planning phase</h2>
+  <!--Source: https://youtu.be/McPdzhLRzCg?si=9NGfYNnooyfjdl70-->
+  <main>
+    <h1 class="heading-h1">Accessibility</h1>
+    <h2 class="heading-h2">Planning phase</h2>
     <p class="accesibility-paragraf">In building our website, accessibility was a primary focus to make sure it's usable for everyone. 
       We combined automated testing with manual checks to ensure our design choices went beyond what automated tools can catch. 
       We aimed for high contrast between text and background colors, following WCAG guidelines, to support users with low vision or color blindness.
@@ -40,40 +41,37 @@
       We used relative units like rem and em for font sizes, allowing users to resize text easily. 
       To make the site adapt well across devices, we used fluid units like vh, vw, and percentages instead of fixed pixels. 
       This approach helps our site look good on any screen size.
-      Alt Text and Heading Structure: We added descriptive alt text for all images so that screen readers can convey the visual content to users who can't see it. 
-      Our heading tags h1, h2, h3 are also structured in a logical order to improve navigation for screen readers.
-     
+      We added descriptive alt text for all images so that screen readers can convey the visual content to users who can't see it. 
+      Our heading tags h1, h2, h3 are also structured in a logical order to improve navigation for screen readers. 
+      Below, you'll find our initial sketch, which is the first image. This serves as a rough plan outlining how we intend to begin building our website. 
+      Additionally, you'll find the final sketches, represented by the last three images.
     </p>
 
-    <section class="accessibility-img">
-      <picture>
-        <img class="sketch1" src="/Images/sketchstart.jpg" alt="The first sketch of the homepage">
-      </picture>
-      <figcaption>The first sketch of the homepage. Private photo</figcaption>
-    
-      <picture>
-        <img class="sketch2" src="/Images/sketchheader.jpg" alt="The final sketch of the homepage">
-      </picture>
-      <figcaption>The final sketch of the homepage. Private photo</figcaption>
-      
-      <picture> 
-        <img class="sketch3" src="/Images/sketchmain.jpg" alt="The final sketch of the homepage">
-      </picture>
-        <figcaption>The final sketch of the homepage. Private photo</figcaption>
-    
-
-    <picture>
-      <img class="sketch4" src="/Images/sketchfooter.jpg" alt="The final sketch of the homepage">
-      </picture>
-        <figcaption>The final sketch of the homepage. Private photo</figcaption>
+    <section class="accessibility-container">
+      <div class="slider-wrapper">
+        <div class="slider">
+        <img id="slide1" src="/Images/sketchstart.jpg" alt="The first sketch of the homepage">
+        <img id="slide2"  src="/Images/sketchheader.jpg" alt="The final sketch of header of the homepage">
+        <img id="slide3"  src="/Images/sketchmain.jpg" alt="The final sketch of main of the homepage">
+        <img id="slide4"  src="/Images/sketchfooter.jpg" alt="The final sketch of the footer of the homepage">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+      </div>
     </section>
    
 
+    <h2 class="heading-h2">Reports</h2>
+    <p class="accesibility-paragraf"> tekst</p>
 
 
 </main>
 
- <!--source: https://www.w3schools.com/css/css_grid.asp-->
+
     <!--FOOTER-->
 <footer class="footer">
         <div class="footerlogo">
@@ -104,7 +102,7 @@
             </ul>
         </section>
       
-        <section>
+        <section class="footerlinks">
           <h2> Sosiale medier </h2>
             <p>
               <a target="_blank" href="https://no.linkedin.com/school/oslomet/" ><img class="icon" src="Images/logolinkedin.png" alt="Oslo Metropolitan University"></a>
@@ -113,29 +111,6 @@
               <a target="_blank" href="https://www.instagram.com/oslomet/?hl=nb" ><img class="icon" src="Images/logoinstagram.png" alt="Oslo Metropolitan University"></a>
             </p>
         </section>
-  
-        <div class="footermap">
-          <div class="google-maps">
-          <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.91651848285545!2d10.7328447!3d59.9210891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7913e2a529%3A0x15d03622a70f16df!2sPilestredet%2046%2C%200167%20Oslo!5e0!3m2!1sno!2sno!4v1729860590154!5m2!1sno!2sno" 
-          width="450" 
-          height="310" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        </div>
-  
-        <section >
-          <adress class="adressinfo">
-            <p>Postboks 4, St. Olavs plass </p>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00</p>
-          </adress>
-        </section>
-    
-  
       </footer>
   
   </body>
