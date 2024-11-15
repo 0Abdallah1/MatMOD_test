@@ -671,7 +671,6 @@ a:hover{
   height: auto;
 }
 
-
 /*Footer section headings with increased font size and margin*/
 .footerlinks h2{
   color: black;
@@ -691,12 +690,6 @@ a:hover{
   position: relative;
 }
 
-/*Footer links styled with black text and no underlines*/
-.footer  a{
-  color: black;
-  text-decoration: black;
-}
-
 /*List items in footer with spacing and no bullets*/
 .footer li{
   line-height: 1.6;
@@ -711,7 +704,3 @@ a:hover{
   gap: 2vw;
   padding: 1.5em;
 }
-
-
-
-
