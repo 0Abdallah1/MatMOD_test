@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 /*Start of nav*/
 #navbar {
     background-color: #323833;
@@ -20,6 +22,7 @@ body{
     z-index: 1;
     width: 100%;
 }
+
 /*Style the menu text and flex*/
 .nav-menu {
     padding: 1em; 
@@ -31,6 +34,7 @@ body{
     gap: 3em; 
     text-align: right;
 }
+
 /*menu text colors*/
 .nav-menu a {
     font-size: 1.2em;
@@ -39,15 +43,18 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+
 /*transfrom menu to orange when hovering mouse*/
 .nav-menu a:hover {
     color: rgb(239, 182, 97);
     transform: scale(1.2);
 }
+
 /*scale logo*/
 #navbar img {
     width: 20vh; height: auto; margin-left: -20%;
 }
+
 /*End of nav*/
 
 /*Start of header*/
@@ -72,6 +79,7 @@ body{
     height: auto;
     display: block;
 }
+
 /*Text inside banner for oslomet*/
 /*https://www.youtube.com/watch?v=Ne-uF4oY6pQ*/
 .banner-text {
@@ -84,8 +92,8 @@ body{
     display: flex;
     flex-direction: column;
     font-size: 3.5vh;
-
 }
+
 .banner-text h1 {
     font-size: 4vw; 
     text-transform: uppercase;
@@ -93,6 +101,7 @@ body{
     line-height: 1.2em;
     margin-bottom: 0.7em;
 }
+
 .apply-text {
     background-color: #ffffff;
     padding: 2em 4em;      
@@ -104,6 +113,7 @@ body{
     top: 60%;
     right: 5%;
 }
+
 .apply-text dl{
     font-size: 1em; 
     text-transform: uppercase;
@@ -111,9 +121,11 @@ body{
     line-height: 1.2em;
     margin-bottom: 0.7em;
 }
+
 .apply-text a{
     color: #4000ff;
 }
+
 .oslomet-content{
 
     color: rgb(255, 220, 243); 
@@ -121,6 +133,7 @@ body{
     left: 0%;
     top: 20%;
 }
+
 .oslomet-content li{
     font-size: large;
     list-style: none;
@@ -138,6 +151,7 @@ body{
     justify-content: flex-start;
     align-items:center;
 }
+
 .global-box{
     padding: 0.3em ;
     border-radius: 0.5em;
@@ -150,7 +164,6 @@ body{
     color: white;
     box-shadow: 0em 0.25em 1em rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.3s ,box-shadow 0.3s;
-
 }
 
 .global-box i{
@@ -158,11 +171,13 @@ body{
     font-size: 1em;
     transition: text-shadow 0.3s;
 }
+
 .global-box:hover {
     color: rgb(239, 182, 97);
     transform: scale(1.2);
     box-shadow: 0em 0.25em 1em rgba(239, 182, 97, 0.4);
 }
+
 .global-box:hover i{
     text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.8);
 }
@@ -223,7 +238,6 @@ body{
     text-align: left;
 }
  
-
 .card-content a {
   text-decoration: none;
   color: #000;
@@ -290,9 +304,6 @@ hr.rounded {
 
 
 
-
-
-
 /* Info about the 3 Topics in the curriculum */
 
 /*Creats a solid section divider 
@@ -303,14 +314,12 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 /* Creats a section and it's style around the learninginfo */
-
 .learningInfo{
   padding: 3rem;
   margin: 4rem;
   font-size: 1.4rem;
   background-color: #ededed;
  }
-
 
  /*Subtitles of the three topics within the curriculum */
 .subtitle {
@@ -323,7 +332,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
     padding: 2rem;
     margin: 0rem 3.8rem  0.1rem;
     width: 90%;
-
 }
 
 /*The boxes have samelength despite different content size. The boxes are inline and have fixed width */
@@ -352,9 +360,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   height: auto;
 }
 
-
 /* Laget linje mellom tittel, og skapper mellomrom mellom uliek sections*/
-
 .divider {
   font-size: 2em;
   display: flex;
@@ -362,7 +368,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 /* comment */
-
 .divider::before, .divider::after {
   flex: 1;
   content: '';
@@ -396,20 +401,20 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 .card-content a {
   text-decoration: none;
   color: #000;
-   text-decoration: underline #ffe071;
+  text-decoration: underline #ffe071;
 }
 
 .card-content a:hover{
-text-decoration: underline #000000;
+  text-decoration: underline #000000;
 }
 
 .semester-view {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1em; 
-    margin-top: 3em; 
-  }
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1em; 
+  margin-top: 3em; 
+}
   
   .semester-view h4 {
     padding: 1em 2em; 
@@ -465,7 +470,7 @@ text-decoration: underline #000000;
   }
 
 
-  /*Accessibility*/
+  /*ACCESSEBILITY*/
   
   /* Styling for main heading to center-align and add margin for spacing*/
   .heading-h1{
@@ -552,10 +557,7 @@ text-decoration: underline #000000;
   }
 
 
-  
-
-
-  /*Footer*/
+  /*FOOTER*/
 
 /* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
 
@@ -592,13 +594,12 @@ text-decoration: underline #000000;
 
 /*Icon styling for consistent size and responsiveness*/
 .icon{
-      width: 4vh;
-      height: auto;
-  }
+  width: 4vh;
+  height: auto;
+}
 
 
 /*Footer section headings with increased font size and margin*/
-
 .footerlinks h2{
   color: black;
   font-size: 120%;
@@ -607,7 +608,6 @@ text-decoration: underline #000000;
 
 /*Styling for map sections in the footer with alignment to the right*/
 .footermap, .google-maps {
- 
   flex-direction: column;
   justify-content: flex-end;
   display: flex;
