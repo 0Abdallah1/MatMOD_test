@@ -315,16 +315,20 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 /* Creats a section and it's style around the learninginfo */
 .learningInfo{
-  padding: 3rem;
-  margin: 4rem;
+  padding: 1rem;
+  margin: 0rem 5rem 1rem;
   font-size: 1.4rem;
-  background-color: #ededed;
+  text-align: center;
+  line-height: 1.5em;
+
+  width: 90%;
  }
 
  /*Subtitles of the three topics within the curriculum */
 .subtitle {
   cursor: pointer;
   font-size: 1.6rem;
+  margin: 1rem;
 }
 
  /*It's the container of the box-items*/
@@ -333,6 +337,14 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
     margin: 0rem 3.8rem  0.1rem;
     width: 90%;
 }
+/*On hover the boxes will move -2em up, and the shadow will be around the boxes, giving it a floating effect. The transform scale makes the boxes pop forward  */
+.box:hover{
+    transform: translateY(-2em);
+    box-shadow: 1em 0.5em 1em 0.5rem rgba(162, 230, 255, 0.15);
+    transform: scale(1.1);
+}
+
+
 
 /*The boxes have samelength despite different content size. The boxes are inline and have fixed width */
 .box {
@@ -355,9 +367,10 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 /*Style of the images inside the boxes*/
 .LearningOutcome img {
-  margin-top: 1rem;
-  max-width: 78%;
-  height: auto;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  max-width: 80%;
+  height: auto%;
 }
 
 /* Laget linje mellom tittel, og skapper mellomrom mellom uliek sections*/
@@ -398,7 +411,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   transition: 0.5s ease;
 }
 
-.card-content a {
+.card-content a .footer a {
   text-decoration: none;
   color: #000;
   text-decoration: underline #ffe071;
@@ -419,28 +432,14 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   .semester-view h4 {
     padding: 1em 2em; 
     font-size: 1.2em;
-    background-color: #3588e7;
-    color: #ffffff;
+    background-color: #fbcd007d;
+    color: #030303;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; 
   }
-  .innhold{ 
-    background-color: #000;
-    color: #ffffff;
-    justify-content: space-evenly;
-    padding: 1em;
-    margin-left: 7em;
-     height: fit-content;
-    width: 15em;
-    text-align: left;
-    position: absolute;
-    cursor: pointer;
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border-radius: 0.3rem;
-  }
+  
   
   .semester-container h3 {
     font-size: 1.3rem;
@@ -527,6 +526,9 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 .Further-info-link{
   color: #000;
+  text-decoration: #003bb1;
+  text-decoration: underline #ffe071;
+  line-height: 1.5rem;
   
 }
 
