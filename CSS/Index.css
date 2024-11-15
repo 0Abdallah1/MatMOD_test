@@ -585,7 +585,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   /*Wrapper for the image slider with a maximum width and centred alignment*/ 
  .slider-wrapper{
   position: relative;
-  max-width: 48rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
