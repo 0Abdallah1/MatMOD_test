@@ -473,46 +473,46 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   /*ACCESSEBILITY*/
   
   /* Styling for main heading to center-align and add margin for spacing*/
-  .heading-h1{
-    margin-bottom: 1rem;
-    font-size: 3.5rem;
-    text-align: center;
-    margin-top: 15%; 
-  }
+.heading-h1{
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 15%; 
+}
 
   /* Styling for subheading with centered alignment and padding for spacing*/
-  .heading-h2{
-    padding-top: 4rem;
-    padding-bottom: 1.0rem;
-    text-align: center;
-    font-size: 2.5rem;
-  }
+.heading-h2{
+  padding-top: 4rem;
+  padding-bottom: 1.0rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
 
   /*Styling for accessibility paragraph with flexible layout and readable font*/ 
-  .accesibility-paragraf{
-    display:flex;
-    width: 90%;
-    margin-top: 3%;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    flex-direction: column;
-    margin: 5% 0 0 0;
-    text-align: center;
-    margin-left: 5%;
-    line-height: 2rem;
-  }
+.accesibility-paragraf{
+  display:flex;
+  width: 90%;
+  margin-top: 3%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  flex-direction: column;
+  margin: 5% 0 0 0;
+  text-align: center;
+  margin-left: 5%;
+  line-height: 2rem;
+}
 
-  /*Container padding for accessibiliy section*/
+ /*Container padding for accessibiliy section*/
  .accessibility-container{
   padding: 2rem;
- }
+}
  
- /*Wrapper for the image slider with a maximum width and centred alignment*/ 
+  /*Wrapper for the image slider with a maximum width and centred alignment*/ 
  .slider-wrapper{
   position: relative;
   max-width: 48rem;
   margin: 0 auto;
- }
+}
 
  /*Styling for slider with flex layout, smoth scrolling and shadow effect*/ 
  .slider{
@@ -522,13 +522,13 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
   border-radius: 0.5rem;
- }
+}
 
  /*Ensures images in the slider align properly and scale to fit*/
  .slider img{
   scroll-snap-align: start;
   object-fit: cover;
- }
+}
 
  /*Navigation controls for the slider positioned at the bottom center*/ 
  .slider-nav{
@@ -539,22 +539,22 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
- }
+}
 
  /*Styling for slider navigation dots with hover effect*/
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75; 
-    transition: opacity ease 250ms;
-  }
+ .slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75; 
+  transition: opacity ease 250ms;
+}
 
 /*Hover effect to make navigation dots more visible*/
-  .slider-nav a:hover{
-    opacity: 1;
-  }
+.slider-nav a:hover{
+  opacity: 1;
+}
 
 
   /*FOOTER*/
