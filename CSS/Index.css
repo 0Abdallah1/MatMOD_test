@@ -470,6 +470,81 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   }
 
 
+/*Videre informasjon*/
+
+.Further-Information-container{
+  display: grid;
+  grid-template-columns: repeat(5, 23%);
+  grid-template-rows: 100%;
+  grid-gap: 15%;
+  width: 70%;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: darkgrey white;
+}
+
+
+.Info-box {
+  width: 140%; /* Consider using a percentage that doesn't exceed the container size */
+  height: 80%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  margin-bottom: 3%;
+  margin-top: 7%;
+}
+
+  
+.Info-box:hover{
+  transform: scale(1.1);
+}
+
+.Further-Information-container > .Info-box:nth-child(1){
+  padding-left: 2%;
+}
+
+.further-img{
+  width: 100%;
+  height: auto;
+}
+/* Styles the thumb where you drag around*/
+::-webkit-scrollbar-thumb{
+  background-color: #3f3f29;
+  border-radius: 0.6rem;
+}
+
+/*Syles the scrollbar's track*/
+::-webkit-scrollbar-track{
+  background: white;
+  box-shadow: inset 0 0 0.031rem grey;
+  border-radius: 0.625rem;
+}
+
+.Further-info-link{
+  color: #000;
+  
+}
+
+.Further-info-link:hover{
+  color: #000;
+  text-decoration: underline #000000;
+}
+
+.further-title{
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-bottom: 0.2em;
+
+  text-decoration: none;
+  color: black;
+}
+
+
   /*ACCESSEBILITY*/
   
   /* Styling for main heading to center-align and add margin for spacing*/
