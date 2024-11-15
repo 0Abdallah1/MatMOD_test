@@ -411,7 +411,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   transition: 0.5s ease;
 }
 
-.card-content a {
+.card-content a .footer a {
   text-decoration: none;
   color: #000;
   text-decoration: underline #ffe071;
@@ -526,6 +526,9 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 .Further-info-link{
   color: #000;
+  text-decoration: #003bb1;
+  text-decoration: underline #ffe071;
+  line-height: 1.5rem;
   
 }
 
