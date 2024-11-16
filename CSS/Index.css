@@ -78,30 +78,35 @@ body{
     color: rgb(225, 225, 225);
     padding: 1em; 
     position: absolute; 
-    top: 70%; 
-    left: 40%; 
+    top: 50%; 
+    left: 35%; 
     transform: translate(-50%, -50%); /*https://www.shecodes.io/athena/121718-how-to-use-transform-translate-50-50-to-center-an-element-in-css*/
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     font-size: 3.5vh;
-
+}
+.banner-text p{
+    margin-top: 1em;
+    max-width: 30em;
 }
 .banner-text h1 {
     font-size: 4vw; 
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.2em;
-    margin-bottom: 0.7em;
+    margin-bottom: 0.3em;
 }
 .apply-text {
     background-color: #ffffff;
-    padding: 2em 4em;      
-    border-radius: 5%;
+    padding: 1.5em 3.5em;
+    border-radius: 1em;
     color: rgb(0, 0, 0);
     display: inline-block;   
     text-align: center;
     position: absolute;
-    top: 60%;
+    box-sizing: border-box;
+    top: 45%;
     right: 5%;
 }
 .apply-text dl{
@@ -112,22 +117,12 @@ body{
     margin-bottom: 0.7em;
 }
 .apply-text a{
-    color: #4000ff;
+    text-decoration: none;
+    border-radius: 1em;
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.5em;
 }
-.oslomet-content{
-
-    color: rgb(255, 220, 243); 
-    position: absolute;
-    left: 0%;
-    top: 20%;
-}
-.oslomet-content li{
-    font-size: large;
-    list-style: none;
-    display: inline-block;  
-    justify-content: space-between;
-}
-
 /*icon Fathima and Biranti styles*/
 
 /*Styles of all the icons inside the buttons with their texts*/
@@ -201,7 +196,8 @@ body{
 /*viktige informasjon*/
 .card-container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     gap: 2rem;
     width: 100%;
@@ -449,9 +445,9 @@ height: 1%;
     align-items: center;
     gap: 1em; 
     margin-top: 3em; 
-  }
+}
   
-  .semester-view h4 {
+.semester-view h4 {
     padding: 1em 2em; 
     font-size: 1.2em;
     background-color: #3588e7;
@@ -460,8 +456,8 @@ height: 1%;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; 
-  }
-  .innhold{ 
+}
+.innhold{ 
     background-color: #000;
     color: #ffffff;
     justify-content: space-evenly;
@@ -475,31 +471,75 @@ height: 1%;
     padding: 0.5rem;
     background-color: #f0f0f0;
     border-radius: 0.3rem;
-  }
+}
   
-  .semester-container h3 {
+.semester-container h3 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
     color: #0072b1;
-  }
+}
   
   /* Table Styling */
-  .course-table {
+.course-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0.5rem 0;
-  }
+}
   
-  .course-table td {
+.course-table td {
     padding: 0.6rem;
     font-size: 1rem;
-  }
+}
   
-  .course-table a {
+.course-table a {
     color: #00509e;
     text-decoration: none;
-  }
+}
   
-  .course-table tr:nth-child(even) {
+.course-table tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
+}
+
+
+/*SUBJECT TO CHANGE because this code dosent feel right and its from the internet*/
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+    .card-container {
+        gap: 1rem;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 1025px){
+    .banner-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 1em;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .apply-text {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+}
+
+
