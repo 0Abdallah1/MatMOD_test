@@ -57,8 +57,6 @@ body{
 
 /*End of nav*/
 
-
-
 /*Start of header*/
 /*Banner for Oslomet picture*/
 .banner-front {
@@ -88,17 +86,12 @@ body{
     color: rgb(225, 225, 225);
     padding: 1em; 
     position: absolute; 
-    top: 50%; 
-    left: 35%; 
+    top: 70%; 
+    left: 40%; 
     transform: translate(-50%, -50%); /*https://www.shecodes.io/athena/121718-how-to-use-transform-translate-50-50-to-center-an-element-in-css*/
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     font-size: 3.5vh;
-}
-.banner-text p{
-    margin-top: 1em;
-    max-width: 30em;
 }
 
 .banner-text h1 {
@@ -106,19 +99,18 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.2em;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.7em;
 }
 
 .apply-text {
     background-color: #ffffff;
-    padding: 1.5em 3.5em;
-    border-radius: 1em;
+    padding: 2em 4em;      
+    border-radius: 5%;
     color: rgb(0, 0, 0);
     display: inline-block;   
     text-align: center;
     position: absolute;
-    box-sizing: border-box;
-    top: 45%;
+    top: 60%;
     right: 5%;
 }
 
@@ -131,13 +123,8 @@ body{
 }
 
 .apply-text a{
-    text-decoration: none;
-    border-radius: 1em;
-    background-color: #333;
-    color: #ffffff;
-    padding: 0.5em;
+    color: #4000ff;
 }
-
 
 .oslomet-content{
     color: rgb(255, 220, 243); 
@@ -155,7 +142,6 @@ body{
 
 
 /*Styles of all the icons inside the buttons with their texts*/
-
 .headerIcon{
     display: flex;
     gap: 0.9em ;
@@ -202,19 +188,6 @@ body{
 
 
 
-
-/*viktig informasjon*/
-.card-container{
-    margin: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    width: 100%;
-    padding: 2em;
-    margin: 0 auto;
-    box-sizing: border-box;
 /*Important Information*/
 
 
@@ -238,7 +211,8 @@ body{
     display:inline-flex;
     gap: 0.5rem;
     justify-content: center;
-    padding: 1rem; 
+    padding: 1rem;
+    
 }
 
 /* Big Card Styling */
@@ -251,6 +225,7 @@ body{
     text-align: left;
     margin: 0.5rem;
     width: 65%;
+  
 }
 
 /* Small Card Styling */
@@ -357,7 +332,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   margin-top: 1.5rem;
   padding: 1rem;
   max-width: 80%;
-  height: auto;
   position: relative;
   max-width: 100%;
   height: auto;
@@ -401,6 +375,7 @@ a:hover{
   text-decoration: underline #000000;
 }
 
+
 .semester-view {    
     display: flex;
     flex-direction: column; 
@@ -412,8 +387,7 @@ a:hover{
     align-items: center;
     gap: 1em; 
     margin-top: 3em; 
-
-
+}
 /* Styles of The study's structure*/
 
 
@@ -425,7 +399,7 @@ a:hover{
   margin-top: 3em; 
 }
   
-.semester-view h4 {
+  .semester-view h4 {
     padding: 1em 2em; 
     font-size: 1.2em;
     background-color: #fbcd007d;
@@ -434,52 +408,41 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; 
-}
-.innhold{ 
-    background-color: #000;
-    color: #ffffff;
-    justify-content: space-evenly;
-    padding: 1em;
-    margin-left: 7em;
-     height: fit-content;
-    width: 15em;
-    text-align: left;
-    position: absolute;
-    cursor: pointer;
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border-radius: 0.3rem;
-}
-
+  }
   
-.semester-container h3 {
+  
+  .semester-container h3 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #0072b1;
-}
+    color: #003bb1;
+  }
   
   /* Table Styling */
-.course-table {
+  .course-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0.5rem 0;
-}
+  }
   
-.course-table td {
+  .course-table td {
     padding: 0.6rem;
     font-size: 1rem;
-}
+  }
   
-.course-table a {
+  .course-table a {
     color: #00509e;
     text-decoration: none;
-}
+  }
   
-.course-table tr:nth-child(even) {
+  .course-table tr:nth-child(even) {
     background-color: #f9f9f9;
-}
+  }
 
-/*Videre informasjon*/
+
+
+
+
+/*Further information*/
 
 .further-information-container{
   display: grid;
@@ -497,20 +460,44 @@ a:hover{
   padding:3rem;
   padding-left: 3.5rem;
   line-height: 1.6rem;
+
 }
 
+
+.studieinfo-img, .fagligleder-img, .viderestudier-img, .utveksling-img, .studenthistorier-img {
+  width: 100%;
+  height: 60%;
+  margin-left: 1%;
+  padding: 1%;
+}
+
+
+/* Styles of all the info-boxes*/
+.further-information-container{
+  gap: 24%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+/* The items info-box styles */
 .info-box {
-  width: 140%; /* Consider using a percentage that doesn't exceed the container size */
-  height: 80%;
+  width: 20rem; 
+  height: 100%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  margin-bottom: 3%;
-  margin-top: 7%;
+  margin-bottom: 10%;
+  margin-top: 1em;
+  padding: 2%;
+  padding-left: 4%;
+  padding-bottom: 3rem;
+  position: center;
 }
 
-.Info-box:hover{
+  
+.info-box:hover{
   transform: scale(1.1);
 }
 
@@ -536,6 +523,7 @@ a:hover{
   border-radius: 0.625rem;
 }
 
+
 .further-title{
   font-weight: bolder;
   font-size: 0.5rem;
@@ -544,11 +532,17 @@ a:hover{
   color: black;
 }
 
-.studieinfo-img, .fagligleder-img, .viderestudier-img, .studenthistorier, .utveksling-img{
-  width: 98%;
-  height: 55%;
-  margin-left: 1%;
+a fotter {
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline #ffe071;
+  line-height: 1.9rem;
 }
+
+
+
+
+
   /*ACCESSEBILITY*/
   
   /* Styling for main heading to center-align and add margin for spacing*/
@@ -709,6 +703,7 @@ a:hover{
   justify-content: space-between;
   gap: 2vw;
   padding: 1.5em;
+<<<<<<< HEAD
 }
 
 
@@ -744,7 +739,7 @@ a:hover{
   flex-wrap: wrap;
 }
 
-.section-container {
+.section-container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
