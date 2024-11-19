@@ -437,6 +437,7 @@ a:hover{
     background-color: #f9f9f9;
   }
 
+  
 
 /*Further information*/
 
@@ -536,6 +537,7 @@ a fotter {
   line-height: 1.9rem;
 }
 
+/*End of further information*/
 
   /*ACCESSEBILITY*/
   
@@ -623,6 +625,9 @@ a fotter {
   opacity: 1;
 }
 
+/*End of Accesssibility*/
+
+
 
   /*FOOTER*/
 
@@ -697,8 +702,9 @@ a fotter {
   justify-content: space-between;
   gap: 2vw;
   padding: 1.5em;
-<<<<<<< HEAD
 }
+/*End of footer*/
+
 
 
 /*Activity Page CSS Start*/
