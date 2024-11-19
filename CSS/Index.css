@@ -57,7 +57,9 @@ body{
 
 /*End of nav*/
 
+
 /*Start of header*/
+
 /*Banner for Oslomet picture*/
 .banner-front {
     position: relative;
@@ -140,7 +142,6 @@ body{
     justify-content: space-between;
 }
 
-
 /*Styles of all the icons inside the buttons with their texts*/
 .headerIcon{
     display: flex;
@@ -184,17 +185,13 @@ body{
     text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.8);
 }
   
-
 /*End of header*/
 
 
 
-/*start og main*/
-
-
+/*Start of main*/
 
 /*Important Information*/
-
 
 /* Section Header Styling */
 .section-header {
@@ -217,7 +214,6 @@ body{
     gap: 0.5rem;
     justify-content: center;
     padding: 1rem;
-    
 }
 
 /* Big Card Styling */
@@ -230,7 +226,6 @@ body{
     text-align: left;
     margin: 0.5rem;
     width: 65%;
-  
 }
 
 /* Small Card Styling */
@@ -256,12 +251,6 @@ body{
     font-size: 1.1em;
    line-height: 1.6;
 }
-
-hr.rounded {
-  border-top: 8px solid #141313;
-  border-radius: 5px;
-}
-
 
 
 
@@ -376,6 +365,8 @@ a:hover{
   text-decoration: underline #000000;
 }
 
+/*!!repetert to ganger under!!*/
+
 
 .semester-view {    
     display: flex;
@@ -389,8 +380,8 @@ a:hover{
     gap: 1em; 
     margin-top: 3em; 
 }
-/* Styles of The study's structure*/
 
+/* Styles of The study's structure*/
 .semester-view {
   display: flex;
   flex-direction: column; 
@@ -437,7 +428,8 @@ a:hover{
     background-color: #f9f9f9;
   }
 
-  
+  /*End of semester plan
+
 
 /*Further information*/
 
@@ -466,13 +458,6 @@ a:hover{
   height: 60%;
   margin-left: 1%;
   padding: 1%;
-}
-
-/* Styles of all the info-boxes*/
-.further-information-container{
-  gap: 24%;
-  justify-content: space-between;
-  margin-bottom: 2rem;
 }
 
 /* Styling individual info-box*/
@@ -520,24 +505,9 @@ a:hover{
   border-radius: 0.625rem;
 }
 
-/*Styling the title*/
-.further-title{
-  font-weight: bolder;
-  font-size: 0.5rem;
-  margin-bottom: 0.2em;
-  text-decoration: none;
-  color: black;
-}
-
-/*Styling links with underline and custom color*/
-a fotter {
-  text-decoration: none;
-  color: #000;
-  text-decoration: underline #ffe071;
-  line-height: 1.9rem;
-}
-
 /*End of further information*/
+
+
 
   /*ACCESSEBILITY*/
   
