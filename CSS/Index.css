@@ -474,7 +474,7 @@ a:hover{
 
 /* The items info-box styles */
 .info-box {
-  width: 20em; 
+  width: 22em; 
   height: 100%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
