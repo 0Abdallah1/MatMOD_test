@@ -431,7 +431,10 @@ a:hover{
   }
 
 
-/*Videre informasjon*/
+
+
+
+/*Further information*/
 
 .further-information-container{
   display: grid;
@@ -452,19 +455,41 @@ a:hover{
 
 }
 
+
+.studieinfo-img, .fagligleder-img, .viderestudier-img, .utveksling-img, .studenthistorier-img {
+  width: 100%;
+  height: 60%;
+  margin-left: 1%;
+  padding: 1%;
+}
+
+
+/* Styles of all the info-boxes*/
+.further-information-container{
+  gap: 24%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+/* The items info-box styles */
 .info-box {
-  width: 140%; /* Consider using a percentage that doesn't exceed the container size */
-  height: 80%;
+  width: 20em; 
+  height: 100%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  margin-bottom: 3%;
-  margin-top: 7%;
+  margin-bottom: 10%;
+  margin-top: 1em;
+  padding: 2%;
+  padding-left: 4%;
+  padding-bottom: 3rem;
+  position: center;
 }
 
   
-.Info-box:hover{
+.info-box:hover{
   transform: scale(1.1);
 }
 
@@ -499,11 +524,10 @@ a:hover{
   color: black;
 }
 
-.studieinfo-img, .fagligleder-img, .viderestudier-img, .studenthistorier, .utveksling-img{
-  width: 98%;
-  height: 55%;
-  margin-left: 1%;
-}
+
+
+
+
   /*ACCESSEBILITY*/
   
   /* Styling for main heading to center-align and add margin for spacing*/
