@@ -149,6 +149,11 @@ body{
     align-items:center;
 }
 
+.headerText{
+  margin-top: 2rem;
+}
+
+/*Styles of the icon buttons */
 .global-box{
     padding: 0.3em ;
     border-radius: 0.5em;
