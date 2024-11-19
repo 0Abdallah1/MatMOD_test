@@ -149,6 +149,11 @@ body{
     align-items:center;
 }
 
+.headerText{
+  margin-top: 2rem;
+}
+
+/*Styles of the icon buttons */
 .global-box{
     padding: 0.3em ;
     border-radius: 0.5em;
@@ -372,7 +377,18 @@ a:hover{
 }
 
 
-
+.semester-view {    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1em; 
+    margin-top: 3em; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1em; 
+    margin-top: 3em; 
+}
 /* Styles of The study's structure*/
 
 .semester-view {
@@ -681,4 +697,110 @@ a fotter {
   justify-content: space-between;
   gap: 2vw;
   padding: 1.5em;
+<<<<<<< HEAD
+}
+
+
+/*Activity Page CSS Start*/
+.header-front img {
+  position: absolute;
+  right: 5%;
+  top: 30%; 
+  width: auto; 
+  height: 100%; 
+}
+
+.header-front h2 {
+  margin-right: 4vw;
+  font-size: 3.5em;
+  text-align: end;
+  top: 50%;
+  left: 3%;
+  position: absolute;
+  color: white;
+}
+
+.bg {
+  background-image: url(/Images/redbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible; 
+  position: relative;
+  min-height: 100vh; 
+}
+.content-container{
+  padding-top: 10em;
+  flex-wrap: wrap;
+}
+
+.section-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; 
+  padding: 1.5em;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.section-text-container{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  max-width: 25em;
+}
+.section-text-container h2{
+  padding-bottom: 0.5rem;
+}
+
+.section-img-container img {
+  display: flex;
+  max-width: 90vh;
+  right: 5%;
+  height: auto; 
+  border-radius: 1em;
+  padding-bottom: 1em;
+}
+/*Actvity Page End*/
+
+
+/*Media*/
+/*SUBJECT TO CHANGE because this code dosent feel right and its from the internet*/
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+    .card-container {
+        gap: 1rem;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 1025px){
+    .banner-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 1em;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .apply-text {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
