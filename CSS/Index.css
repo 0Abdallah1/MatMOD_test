@@ -57,8 +57,6 @@ body{
 
 /*End of nav*/
 
-
-
 /*Start of header*/
 /*Banner for Oslomet picture*/
 .banner-front {
@@ -144,7 +142,6 @@ body{
 
 
 /*Styles of all the icons inside the buttons with their texts*/
-
 .headerIcon{
     display: flex;
     gap: 0.9em ;
