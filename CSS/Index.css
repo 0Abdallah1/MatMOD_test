@@ -254,6 +254,35 @@ body {
 
 
 
+/* What can you work as? */
+.work-aspects {
+  align-items: left;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+.img-work {
+  max-width: 40%;
+  height: auto;
+  margin-right: 45%;
+}
+
+#work-aspects-text{
+
+  display: flex;
+  padding: 1.5%;
+  text-align: right;
+  justify-content:right;
+  
+  
+}
+
+
+
+
+
+
 /* Info about the 3 Topics in the curriculum */
 
 /*Creats a solid section divider 
@@ -263,15 +292,16 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   border-top: 2px solid #000000;
 }
 
-/* Creats a section and it's style around the learninginfo */
-.learningInfo {
-  padding: 1rem;
-  margin: 0rem 5rem 1rem;
-  font-size: 1.4rem;
-  text-align: center;
-  line-height: 1.5em;
-  width: 90%;
- }
+/* Creates a styled section for text with padding and margins */
+.text-style {
+  padding: 1rem; /* Adds space inside the text container */
+  margin: 0rem 5rem 1rem; /* Adds space around the text (top: 0, sides: 5rem, bottom: 1rem) */
+  font-size: 1.4rem; /* Sets the font size for readability */
+  text-align: center; /* Centers the text horizontally */
+  line-height: 1.5em; /* Improves readability by spacing lines */
+  width: 90%; /* Limits the width of the text container to 90% of its parent */
+}
+
 
  /*Subtitles of the three topics within the curriculum */
 .subtitle {
