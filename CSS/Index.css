@@ -106,7 +106,6 @@ body {
     margin-bottom: 0.7em;
 }
 
-<<<<<<< HEAD
 
 .apply-text-box a{
     color: #010103;
@@ -127,33 +126,6 @@ body {
 
 
 .oslomet-content{
-=======
-.apply-text-box {
-    background-color: #ffffff;
-    padding: 2em 4em;      
-    border-radius: 5%;
-    color: rgb(0, 0, 0);
-    display: inline-block;   
-    text-align: center;
-    position: absolute;
-    top: 60%;
-    right: 5%;
-}
-
-.apply-text-box dl {
-    font-size: 1em; 
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1.2em;
-    margin-bottom: 0.7em;
-}
-
-.apply-text-box a {
-    color: #4000ff;
-}
-
-.oslomet-content {
->>>>>>> ecec6536e27a7b09c0d5ed7c029bfebfbbfb1132
     color: rgb(255, 220, 243); 
     position: absolute;
     left: 0%;
@@ -175,15 +147,10 @@ body {
     align-items:center;
 }
 
-<<<<<<< HEAD
 /* Styles of the text decsrption in header*/
 .headerText{
   margin-top: 2rem; /*space away from icons above */
   font-size: 1,5rem; 
-=======
-.headerText {
-  margin-top: 2rem;
->>>>>>> ecec6536e27a7b09c0d5ed7c029bfebfbbfb1132
 }
 
 /*Styles of the icon buttons */
@@ -536,6 +503,7 @@ a:hover {
 }
 
 /*End of further information*/
+
 
 
 
