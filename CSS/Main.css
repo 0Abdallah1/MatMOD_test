@@ -52,7 +52,7 @@ body {
 
 /*scale logo*/
 #navbar img {
-    width: 20vh; height: auto; margin-left: -20%;
+    width: 30vh; height: auto; margin-left: -20%;
 }
 
 /*End of nav*/
@@ -122,8 +122,6 @@ body {
   width: 100%;
   height: 80%;
 }
-
-
 
 .oslomet-content{
     color: rgb(255, 220, 243); 
@@ -211,34 +209,23 @@ body {
     margin: 2rem auto;
     box-sizing: border-box;
     display:inline-flex;
-    gap: 0.5rem;
+    gap: 3rem;
     justify-content: center;
     padding: 1rem;
 }
 
-/* Big Card Styling */
-.card-big {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1.5rem;
-    text-align: left;
-    margin: 0.5rem;
-    width: 65%;
-}
-
-/* Small Card Styling */
-.card-small {
-    width: 54%;
+/* Card Styling */
+.card {
+    width: 25%;
     margin: 0.5rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2rem 2rem rgba(54, 71, 224, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1.5rem;
     text-align: left;
-    height: fit-content;
+   
+    border: 0.05em solid rgb(22, 25, 208);
 }
 
 /* Card Hover Effect */
@@ -252,33 +239,28 @@ body {
    line-height: 1.6;
 }
 
-
-
 /* What can you work as? */
 .work-aspects {
-  align-items: left;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
   margin: 1%;
   padding: 1%;
-  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .img-work {
-  max-width: 40%;
   height: auto;
-  margin-right: 45%;
+  width: 37rem;
+  
 }
 
 #work-aspects-text{
-
   display: flex;
   padding: 1.5%;
-  text-align: right;
-  justify-content:right;
-  
-  
+  text-align: left;
 }
-
-
 
 
 
@@ -398,11 +380,6 @@ a:hover {
 
 
 
-
-
-/*!!repetert to ganger under!!*/
-
-
 /* Styles of The study's structure*/
 .semester-view {    
     display: flex;
@@ -463,7 +440,7 @@ a:hover {
 /* Setting the container to use a grid layout with spesific column sizes*/
 .further-information-container {
   display: grid;
-  grid-template-columns: repeat(7, 26%);
+  grid-template-columns: repeat(6, 26%);
   grid-template-rows: 100%;
   grid-gap: 17%; 
   width: 75%;
@@ -480,9 +457,11 @@ a:hover {
 }
 
 /*Defining dimensions for the images*/
-.studieinfo-img, .fagligleder-img, .viderestudier-img, .utveksling-img, .studenthistorier-img {
+.videreinfo-img {
   width: 100%;
   height: 55%;
+  margin-bottom: 5%;
+  
 }
 
 /* Styling individual info-box*/
