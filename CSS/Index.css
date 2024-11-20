@@ -373,6 +373,7 @@ a:hover {
 /*!!repetert to ganger under!!*/
 
 
+/* Styles of The study's structure*/
 .semester-view {    
     display: flex;
     flex-direction: column; 
@@ -385,18 +386,6 @@ a:hover {
     gap: 1em; 
     margin-top: 3em; 
 }
-
-/* Styles of The study's structure*/
-.semester-view {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  gap: 1em; 
-  margin-top: 3em; 
-}
-  
-
-
 
 .semester-view h4 {
   padding: 1em 2em; 
