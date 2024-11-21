@@ -122,23 +122,6 @@ body {
   width: 100%;
   height: 80%;
 }
-
-
-
-.oslomet-content{
-    color: rgb(255, 220, 243); 
-    position: absolute;
-    left: 0%;
-    top: 20%;
-}
-
-.oslomet-content li {
-    font-size: large;
-    list-style: none;
-    display: inline-block;  
-    justify-content: space-between;
-}
-
 /*Styles of all the icons inside the buttons with their texts*/
 .headerIcon {
     display: flex;
@@ -192,18 +175,17 @@ body {
 /*Start of main*/
 
 /*Important Information*/
-
 /* Section Header Styling */
 .important-info {
-    font-size: 2rem;
-    word-spacing: 0.2rem;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 0.5rem;
-    color: #1c086b;
-    border-bottom: 2px solid #280c97;
-    border-radius: 0.3em;  
+  font-size: 2rem;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #1c086b;
+  border-bottom: 2px solid #280c97;
+  border-radius: 0.3em;  
 }
 
 /* Card Container Styling */
@@ -356,8 +338,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 /* General link style for all links on page*/
 a {
   text-decoration: none;
-  color: #000;
-  text-decoration: underline #ffe071;
+  text-decoration: underline #3286ed;
   line-height: 1.9rem;
 }
 
@@ -365,37 +346,28 @@ a:hover {
   text-decoration: underline #000000;
 }
 
-
-
-
-
-
 /*!!repetert to ganger under!!*/
 
 
 /* Styles of The study's structure*/
 .semester-view {    
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1em; 
-    margin-top: 3em; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1em; 
-    margin-top: 3em; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1em; 
+  margin-top: 3em;
 }
 
 .semester-view h4 {
   padding: 1em 2em; 
   font-size: 1.2em;
-  background-color: #fbcd007d;
+  background-color: #00a6ff7d;
   color: #030303;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  width: 30%;
+  text-align: center;
+  border-radius: 1em;
+
 }
   
 .semester-container h3 {
@@ -705,6 +677,7 @@ a:hover {
 .content-container {
   padding-top: 10em;
   flex-wrap: wrap;
+  background-color: rgb(255, 246, 255);
 }
 
 .section-container {
@@ -730,7 +703,7 @@ a:hover {
 
 .section-img-container img {
   display: flex;
-  max-width: 90vh;
+  max-width: 80vh;
   right: 5%;
   height: auto; 
   border-radius: 1em;
