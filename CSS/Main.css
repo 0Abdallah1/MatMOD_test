@@ -9,8 +9,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #e5e9ec
-;
+    background-color: #e5e9ec;
 }
 
 /*Start of nav*/
@@ -728,6 +727,18 @@ a {
   opacity: 1;
 }
 
+.accessibility-img{
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.accessibility-img-tekst{
+  width: 60%;
+  height: auto;
+  margin-left: 40%;
+}
 /*End of Accesssibility*/
 
 
