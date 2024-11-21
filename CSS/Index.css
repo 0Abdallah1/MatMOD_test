@@ -52,7 +52,7 @@ body {
 
 /*scale logo*/
 #navbar img {
-    width: 30vh; height: auto; margin-left: -20%;
+    width: 20vh; height: auto; margin-left: -20%;
 }
 
 /*End of nav*/
@@ -107,7 +107,21 @@ body {
 }
 
 
+.apply-text-box a{
+    color: #010103;
+}
 
+.link-header{
+  background-color: #f6e54c;
+  font-size: 1.5rem;
+  border: 5rem;
+  margin-top: 2%;
+  border-radius: 2%;
+  border-radius: 1em;
+  border: 0.1em solid #ccc;
+  width: 100%;
+  height: 80%;
+}
 
 
 
@@ -197,23 +211,34 @@ body {
     margin: 2rem auto;
     box-sizing: border-box;
     display:inline-flex;
-    gap: 3rem;
+    gap: 0.5rem;
     justify-content: center;
     padding: 1rem;
 }
 
-/* Card Styling */
-.card {
-    width: 25%;
-    margin: 0.5rem;
+/* Big Card Styling */
+.card-big {
     background-color: #ffffff;
     border-radius: 0.5rem;
-    box-shadow: 0 2rem 2rem rgba(54, 71, 224, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1.5rem;
     text-align: left;
-   
-    border: 0.05em solid rgb(22, 25, 208);
+    margin: 0.5rem;
+    width: 65%;
+}
+
+/* Small Card Styling */
+.card-small {
+    width: 54%;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+    text-align: left;
+    height: fit-content;
 }
 
 /* Card Hover Effect */
@@ -227,28 +252,33 @@ body {
    line-height: 1.6;
 }
 
+
+
 /* What can you work as? */
 .work-aspects {
-  display: flex;
-  align-items: start;
-  gap: 1rem;
+  align-items: left;
   margin: 1%;
   padding: 1%;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  text-align: center;
 }
 
 .img-work {
+  max-width: 40%;
   height: auto;
-  width: 37rem;
-  
+  margin-right: 45%;
 }
 
 #work-aspects-text{
+
   display: flex;
   padding: 1.5%;
-  text-align: left;
+  text-align: right;
+  justify-content:right;
+  
+  
 }
+
+
 
 
 
@@ -353,9 +383,24 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   line-height: 1.2rem;
 }
 
+/* General link style for all links on page*/
+a {
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline #ffe071;
+  line-height: 1.9rem;
+}
+
+a:hover {
+  text-decoration: underline #000000;
+}
 
 
 
+
+
+
+/*!!repetert to ganger under!!*/
 
 
 /* Styles of The study's structure*/
@@ -418,9 +463,9 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 /* Setting the container to use a grid layout with spesific column sizes*/
 .further-information-container {
   display: grid;
-  grid-template-columns: repeat(6, 26%);
+  grid-template-columns: repeat(5, 22%);
   grid-template-rows: 100%;
-  grid-gap: 17%; 
+  grid-gap: 12%;
   width: 75%;
   height: 80vh;
   margin-left: auto;
@@ -435,16 +480,16 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 /*Defining dimensions for the images*/
-.videreinfo-img {
+.studieinfo-img, .fagligleder-img, .viderestudier-img, .utveksling-img, .studenthistorier-img {
   width: 100%;
-  height: 55%;
-  margin-bottom: 5%;
-  
+  height: 60%;
+  margin-left: 1%;
+  padding: 1%;
 }
 
 /* Styling individual info-box*/
 .info-box {
-  width: 21rem; 
+  width: 20rem; 
   height: 100%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -597,7 +642,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 5%;
 }
 
 /*Styling for footer logo with responsive size and spacing*/
