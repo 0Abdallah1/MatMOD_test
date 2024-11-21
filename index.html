@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales initical viewport to the devices scale-->
     <title>Oslomet MAT</title> <!--title for browser-->
     <!--css file-->
-    <link rel="stylesheet" type="text/CSS" href="CSS/Index.css">
+    <link rel="stylesheet" type="text/CSS" href="CSS/Main.css">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
@@ -16,7 +16,7 @@
   <body>
     <!--NAVIGATION-->
     <nav id="navbar">
-      <a href="index.html"><img src="Images/logo.png" alt="Oslo Metropolitan University"></a> <!--Oslomets logo-->
+      <a href="index.html"><img src="Images/logoOslomet.png" alt="Oslo Metropolitan University"></a> <!--Oslomets logo-->
       <ul class="nav-menu"> <!--Class for menu-->
         <li><a href="index.html">Home</a></li> 
         <li><a href="Activity_page.html">Activity Page</a></li>
@@ -52,10 +52,7 @@
   </header>
 <!--HEADER END-->
    
-   
-   <dl>15. APRIL: ORDINÆR SØKNADSFRIST </dl>
-   <dl>1. MARS: FRIST FOR ENKELTE SØKERE</dl>
-   
+
   
 
 
@@ -68,7 +65,7 @@
        <h3 class="fa-solid fa-circle-info">Viktig Informasjon</h3> 
       </div>
       <div class="card-container">
-        <div class="card-small">
+        <div class="card">
           <article class="card-content">
         <h3>Opptakskrav og poeng</h3> <br>
           <p><br>For å søke på dette programmet må du ha <a  href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/" target="_blank"> studiekompetanse (samordnaopptak.no)</a></p>
@@ -79,16 +76,8 @@
           </article>
       </div>
   
-      <div class="card-big">
-        <article class="card-content">
-      <h3>Hva kan du jobbe som?</h3><br>
-        <p><br>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.
-        Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til
-        klima, forsikring og finans, og datadrevne metoder for verdiskaping.Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>
-        </article>
-      </div>
   
-      <div class="card-small">
+      <div class="card">
         <article class="card-content">
       <h3>Hvordan foregår undervisningen?</h3><br>
         <p> Undervisningen er en kombinasjon av</p>
@@ -108,7 +97,7 @@
         </article>
       </div>
   
-      <div class="card-small">
+      <div class="card">
         <article class="card-content">
         <h3>Hva koster det?</h3><br>
           <p> <br><a href="https://student.oslomet.no/semesteravgift"target="_blank">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a><br> Det er mulig å søke om unntak for betaling av denne studieavgiften. 
@@ -120,10 +109,35 @@
     <hr class="solid">
   </section>
   
+  <section> 
+    <h3 class="divider">Hva kan du jobbe som?</h3>
+    <div class="work-aspects">
+    <figure>
+      <img class="img-work" src="Images/codework.webp" alt="Two people working on code at a modern workplace.">
+      <figcaption>Photo by Dragos Condrea</figcaption>
+    </figure>
+  
+    <div class="text-content">
+      <p class="text-style" id="work-aspects-text">
+      Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder. 
+      Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.
+      Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping. 
+      Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
+      </p>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
   <!--Info about the curriculum-->
   <section>
     <h1 class="divider">Hva lærer du?</h1>
-    <p class="learningInfo">Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
+    <p class="text-style">Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
       og statistikk.<br> Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi,
       biologiske prosesser og ulike samfunnssystemer. Det første studieåret har du emner i blant annet matematikk,
       programmering, fysikk og kjemi for å få en felles forståelse av tematikken. Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.</p>
@@ -153,6 +167,7 @@
     </div>
   
   </section>
+
   
   <!--The study's structure over 3 years-->
   
@@ -536,18 +551,40 @@
   
   
   <!--Further Information-->
+
   <!--sources for the pictures: 
   https://unsplash.com/photos/three-men-laughing-while-looking-in-the-laptop-inside-room-XkKCui44iM0, 
   https://unsplash.com/photos/man-in-black-and-white-checkered-dress-shirt-sitting-on-black-office-rolling-chair-w_zE6qlkQKA
-  the rest of the pictures in the videre informasjon container are from oslomet-->
+  https://ergoterapeutene.org/nyheter/619-sokere-tilbudt-a-studere-ergoterapi/attachment/samordna-opptak/, 
+  https://www.aftenposten.no/karriere/i/5089KX/slik-gaar-du-frem-naar-du-skal-soeke-studier,
+  https://www.careeraddict.com/free-education,
+
+  the rest of the pictures in the videre informasjon container are from oslomet, -->
+
+
   <!--sources: https://www.w3schools.com/css/css_grid_container.asp-->
-  
-  <!--First container of studiested and videre spørsmål-->
-  <h2 class="section-header">Videre Informasjon</h2>
+
+<!--First container of slik søker du-->
+<h2 class="divider">Videre Informasjon</h2>
     <section class="further-information-container">
       <figure class="info-box">
           <picture>
-            <img class="studieinfo-img"src="/Images/pilestredet.png" alt="picture of oslomet">
+            <img class="videreinfo-img"src="/Images/sliksøkerdu.png" alt="picture of oslomet">
+          </picture>
+          <figcaption>
+          <h3>Slik søker du</h3>
+          <p> Du søker på Samordna opptak med studiekode 215 503.
+            15. april: ordinær søknadsfrist
+            1. mars: frist for enkelte søkere
+            <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier"target="_blank">Mer om å søke på bachelor.</a></p>
+          </figcaption>
+      </figure>
+
+
+<!--Second container of studiested and videre spørsmål-->
+      <figure class="info-box">
+          <picture>
+            <img class="videreinfo-img"src="/Images/pilestredet.png" alt="picture of oslomet">
           </picture>
           <figcaption>
           <h3>Studieinfo</h3>
@@ -557,10 +594,10 @@
           </figcaption>
       </figure>
   
-    <!--Second container about faglig leder-->
+  <!--Third container about studenthistorier-->
     <figure class="info-box">
       <picture>
-      <img class="studenthistorier-img" src="/Images/studenthistorier.png" alt="picture of to persons from oslomet">
+      <img class="videreinfo-img" src="/Images/studenthistorier.png" alt="picture of to persons from oslomet">
     </picture>
     <figcaption>
     <h3>Studenthistorier</h3>
@@ -569,10 +606,10 @@
     </figcaption>
   </figure>
   
-    <!--Third container about interessert i andre studier-->
+  <!--Forth container about faglig leder-->
     <figure class="info-box">
       <picture>
-        <img class="fagligleder-img" src="/images/fagligleder.png" alt="picture of the faglig leder">
+        <img class="videreinfo-img" src="/images/fagligleder.png" alt="picture of the faglig leder">
       </picture>
       <figcaption>
       <h3>Faglig leder</h3>
@@ -586,10 +623,10 @@
       </figcaption>
     </figure>
     
-  <!--Forth container about -->
+  <!--Fifth container about andre studier du kanskje er interessert i-->
   <figure class="info-box">
     <picture>
-      <img class="viderestudier-img" src="/Images/viderestudier.png" alt="picture of an engineering project">
+      <img class="videreinfo-img" src="/Images/viderestudier.png" alt="picture of an engineering project">
     </picture>
     <figcaption>
     <h3>Du er kanskje også interessert i disse?</h3>
@@ -605,10 +642,10 @@
   </figure>
    
   
-  <!--Fifth container about -->
+  <!--Sixth container about utveksling-->
   <figure class="info-box">
     <picture>
-      <img class="utveksling-img" src="/Images/utveksling.png" alt="picture of the earth globe">
+      <img class="videreinfo-img" src="/Images/utveksling.png" alt="picture of the earth globe">
     </picture>
     <figcaption>
     <h3>Utveksling</h3>
