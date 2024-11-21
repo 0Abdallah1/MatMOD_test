@@ -205,7 +205,7 @@ body {
   text-align: center;
   padding: 0.5rem;
   color: #1c086b;
-  border-bottom: 2px solid #280c97;
+  border-bottom: 0.125rem solid #280c97;
   border-radius: 0.3em;  
 }
 
@@ -241,8 +241,8 @@ body {
 }
 
 .card-content {
-    font-size: 1.1em;
-   line-height: 1.6;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 /* What can you work as? */
@@ -277,7 +277,7 @@ body {
 source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
  hr.solid {
-  border-top: 2px solid #000000;
+  border-top: 0.125rem solid #000000;
 }
 
 /* Creates a styled section for text with padding and margins */
@@ -378,9 +378,6 @@ a {
 }
 
 
-/*!!repetert to ganger under!!*/
-
-
 /* Styles of The study's structure*/
 .semester-view {    
   display: flex;
@@ -396,7 +393,7 @@ a {
   background-color: #3e5773;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
   width: 30%;
   text-align: center;
@@ -662,6 +659,7 @@ a {
 .icon {
   width: 4vh;
   height: auto;
+  
 }
 
 /*Footer section headings with increased font size and margin*/
@@ -793,7 +791,7 @@ a {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .img-work {
     position: relative;
     height: auto;
@@ -817,7 +815,7 @@ a {
 
 
 
-@media (max-width: 1025px) {
+@media (max-width: 51.25rem) {
   .banner-text {
     position: relative;
     top: auto;
