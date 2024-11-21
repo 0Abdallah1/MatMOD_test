@@ -52,7 +52,7 @@ body {
 
 /*scale logo*/
 #navbar img {
-    width: 20vh; height: auto; margin-left: -20%;
+    width: 30vh; height: auto; margin-left: -0%;
 }
 
 /*End of nav*/
@@ -193,34 +193,24 @@ body {
     margin: 2rem auto;
     box-sizing: border-box;
     display:inline-flex;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: center;
     padding: 1rem;
 }
 
-/* Big Card Styling */
-.card-big {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1.5rem;
-    text-align: left;
-    margin: 0.5rem;
-    width: 65%;
-}
-
-/* Small Card Styling */
-.card-small {
-    width: 54%;
+/* Card Styling */
+.card {
+    width: 25%;
     margin: 0.5rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2rem 2rem rgba(54, 71, 224, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1.5rem;
     text-align: left;
-    height: fit-content;
+   
+    border: 0.05em solid rgb(22, 25, 208);
 }
 
 /* Card Hover Effect */
@@ -234,6 +224,29 @@ body {
    line-height: 1.6;
 }
 
+/* What can you work as? */
+.work-aspects {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin: 1%;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.img-work {
+  height: auto;
+  width: 90vh;
+}
+
+#work-aspects-text{
+  display: flex;
+  padding: 1.5%;
+  text-align: left;
+}
+
+
 
 
 /* Info about the 3 Topics in the curriculum */
@@ -245,15 +258,15 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   border-top: 2px solid #000000;
 }
 
-/* Creats a section and it's style around the learninginfo */
-.learningInfo {
-  padding: 1rem;
-  margin: 0rem 5rem 1rem;
-  font-size: 1.4rem;
+/* Creates a styled section for text with padding and margins */
+.text-style {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem; 
   text-align: center;
-  line-height: 1.5em;
-  width: 90%;
- }
+  line-height: 1.5em; 
+}
+
 
  /*Subtitles of the three topics within the curriculum */
 .subtitle {
@@ -405,9 +418,9 @@ a:hover {
 /* Setting the container to use a grid layout with spesific column sizes*/
 .further-information-container {
   display: grid;
-  grid-template-columns: repeat(5, 22%);
+  grid-template-columns: repeat(6, 26%);
   grid-template-rows: 100%;
-  grid-gap: 12%;
+  grid-gap: 17%; 
   width: 75%;
   height: 80vh;
   margin-left: auto;
@@ -422,16 +435,16 @@ a:hover {
 }
 
 /*Defining dimensions for the images*/
-.studieinfo-img, .fagligleder-img, .viderestudier-img, .utveksling-img, .studenthistorier-img {
+.videreinfo-img {
   width: 100%;
-  height: 60%;
-  margin-left: 1%;
-  padding: 1%;
+  height: 55%;
+  margin-bottom: 5%;
+  
 }
 
 /* Styling individual info-box*/
 .info-box {
-  width: 20rem; 
+  width: 21rem; 
   height: 100%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -712,9 +725,17 @@ a:hover {
 /*Actvity Page End*/
 
 
-/*Media*/
-/*SUBJECT TO CHANGE because this code dosent feel right and its from the internet*/
+
 @media (max-width: 768px) {
+  .img-work {
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .work-aspects {
+    flex-wrap: wrap;
+    align-items: start;
+  }
     .card {
         width: 100%;
         padding: 1rem;
@@ -734,11 +755,11 @@ a:hover {
         padding: 1em;
         text-align: center;
         font-size: 2vh;
+        color: black;
     }
 
     .banner-content {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -749,5 +770,6 @@ a:hover {
         margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
+        color: black;
     }
 }
