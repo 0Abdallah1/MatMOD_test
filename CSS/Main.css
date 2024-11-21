@@ -38,8 +38,8 @@ body {
 
 /*menu text colors*/
 .nav-menu a {
-    font-size: 1.2em;
-    color: rgb(244, 245, 215);
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -47,8 +47,9 @@ body {
 
 /*transfrom menu to orange when hovering mouse*/
 .nav-menu a:hover {
-    color: rgb(243, 235, 223);
+    color: #ff9f60;
     transform: scale(1.2);
+    text-decoration: underline;
 }
 
 /*scale logo*/
@@ -143,10 +144,11 @@ body {
     align-items:center;
 }
 
+/*Style of the one link in the headerIcon of "Søknad" */
 .headerIcon a {
-    color: rgb(244, 245, 215);
-    transition: 1s;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    
 }
 
 /* Styles of the text decsrption in header*/
@@ -179,16 +181,18 @@ body {
     transition: text-shadow 0.3s;
 }
 
-.global-box:hover {
-    color: rgb(239, 182, 97);
+.global-box:hover, .global-box a:hover {
+    color:rgb(255, 247, 216);
     transform: scale(1.2);
-    box-shadow: 0em 0.25em 1em rgba(239, 182, 97, 0.4);
+    box-shadow: 0em 0.25em 1em rgba(224, 224, 224, 0.4);
 }
 
-.global-box:hover i{
-    text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.8);
+.global-box:hover, .global-box a:hover i{
+    text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.924);
 }
   
+
+
 /*End of header*/
 
 
@@ -220,6 +224,17 @@ body {
     padding: 1rem;
 }
 
+/*Styles of links in the cards, a change of color different from the generial style of links*/
+.card a{
+  color: #22313cc0;
+}
+
+/*On hover the color changes to purple*/
+.card a:hover {
+    color: #800080; /* Purple color for visited links (example) */
+}
+
+
 /* Card Styling */
 .card {
     width: 25%;
@@ -228,15 +243,14 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 2rem 2rem rgba(54, 71, 224, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1.5rem;
+    padding: 1.6rem;
     text-align: left;
-   
     border: 0.05em solid rgb(22, 25, 208);
 }
 
 /* Card Hover Effect */
-.card-big:hover, .card-small:hover {
-    transform: translateY(-0.3rem);
+.card:hover {
+    transform: translateY(-1.3rem);
     box-shadow: 0 0.75rem 1.5rem rgba(61, 61, 61, 0.15);
 }
 
@@ -245,7 +259,15 @@ body {
   line-height: 1.6;
 }
 
-/* What can you work as? */
+
+/*Style of the solid line at end of important info section*/ 
+hr.solid {
+  border-top: 2px solid #000000;
+}
+
+
+
+/* Styles of: What can you work as?  */
 .work-aspects {
   display: flex;
   align-items: start;
@@ -258,8 +280,9 @@ body {
 
 .img-work {
   height: auto;
-  width: 70vh;
+  width: 90vh;
   width: 37rem;
+  
 }
 
 #work-aspects-text{
@@ -267,8 +290,6 @@ body {
   padding: 1.5%;
   text-align: left;
 }
-
-
 
 
 /* Info about the 3 Topics in the curriculum */
@@ -291,19 +312,19 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 
  /*Subtitles of the three topics within the curriculum */
-.subtitle {
+.sub-title {
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 1rem;
 }
 
  /*It's the container of the box-items*/
 .learningOutcome {
     padding: 2rem;
-    margin: 0rem 3.8rem  0.1rem;
+    margin: 2rem 3rem  1rem;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: space-between;
     color: #000;
 }
@@ -320,18 +341,22 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   display: inline-table;
   justify-content: baseline;
   border-radius: 2em;
-  width: 20em;
+  width: 25em;
   background-color: #f9f9f9;
   border: 0.1em solid #ccc;
   text-align: center;
 }
 
-/*syles the box's text to have padding, and margin, plus text size and line height*/
-.box p{
-  padding: 1rem;
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
+/* Styles of the texts within the boxes */
+/*syles the box's text to have padding, and margin, plus text size and line height etc*/
+/* Styles for text within the boxes */
+.box p {
+  font-size: 1.2rem; 
+  line-height: 1.5em;  
+  color: #333; 
+  padding: 0.5em; 
+  
+  
 }
 
 /*Style of the images inside the boxes*/
@@ -346,14 +371,18 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   transition: 0.5s ease;
 }
 
-/* Laget linje mellom tittel, og skapper mellomrom mellom uliek sections*/
+
+
+
+/* Styles for the divider line effect */
+/*Source Code: https://www.w3schools.com/howto/howto_css_text_divider.asp */
 .divider {
   font-size: 2em;
   display: flex;
   align-items: center;
 }
 
-/* comment */
+/* Creates space before the text in between the line, both before and after the text's placement in the middle of the line */
 .divider::before, .divider::after {
   flex: 1;
   content: '';
@@ -362,13 +391,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   margin: 2em;
 }
 
-/* Styles of the texts within the boxes */
-.box p {
-  overflow-wrap: break-word;
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.2rem;
-}
 
 /* General link style for all links on page*/
 a {
@@ -438,9 +460,9 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 26%);
   grid-template-rows: 100%;
-  grid-gap: 10%; 
-  width: 90%;
-  height: 105vh;
+  grid-gap: 17%; 
+  width: 75%;
+  height: 88vh;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
@@ -453,7 +475,7 @@ a {
 }
 
 /*Defining dimensions for the images*/
-.videreinfo-img {
+.further-info-img {
   width: 100%;
   height: 55%;
   margin-bottom: 5%;
@@ -469,7 +491,6 @@ a {
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin-bottom: 10%;
-  margin-top: 1em;
   padding: 2%;
   padding-left: 4%;
   padding-bottom: 3rem;
@@ -479,6 +500,23 @@ a {
 /*Enlarging the box slightly on hover*/
 .info-box:hover {
   transform: scale(1.1);
+}
+
+/*info-box style */
+.info-box a{
+  color: #433a3ad4;
+  line-height: 2.5rem;
+}
+
+/*Creats word-space in a specific links within the class of p: other studies*/
+.other-studies{
+ word-spacing: 0.5rem;
+
+}
+/*hover style of info-box links*/
+.info-box a:hover{
+    color: #535eff;
+
 }
 
 /* Adding custom padding for the first info-box*/
@@ -505,9 +543,99 @@ a {
   border-radius: 0.625rem;
 }
 
-
 /*End of further information*/
 
+
+ /*FOOTER*/
+
+/* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
+
+/*Footer container with flexible layout, background color and spacing*/
+.footer {
+  display: flex;
+  background-color: #1c304a;
+  padding: 1% 2%;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 5%;
+}
+
+.footer a{
+  color: white;
+   text-decoration: underline #a8cfff;
+   line-height: 3em;
+}
+
+.footer a:hover{
+  color: #f1c40f;
+}
+
+
+/*Styling for footer logo with responsive size and spacing*/
+.footer-logo {
+  align-self: flex-start;
+  width: 30%;
+  height: auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 1%;
+}
+
+/*Footer links styled as a column with consistent spacing and readability*/
+.footerlinks {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  flex: 1;
+  line-height: 1.6;
+}
+
+/*Icon styling for consistent size and responsiveness*/
+.icon {
+  width: 4vh;
+  height: auto;
+}
+
+/*Footer section headings with increased font size and margin*/
+.footerlinks h2 {
+  color: white;
+  font-size: 120%;
+  margin-bottom: 1vh;
+}
+
+/*Styling for map sections in the footer with alignment to the right*/
+.footermap, .google-maps {
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  margin-left: auto;
+  top: 0.5vh;
+  right: 0.5%;
+  align-items:flex-end;
+  position: relative;
+}
+
+/*List items in footer with spacing and no bullets*/
+.footer li {
+  line-height: 1.6;
+  list-style: none;
+}
+
+/*Adress info section styled for alignment and spacing*/
+.footer .adressinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 1.5em;
+  color: white;
+}
+/*End of footer*/
 
 
 
@@ -764,39 +892,13 @@ a {
 }
 /*Actvity Page End*/
 
-@media screen and (max-width: 1200px){
-  .further-information-container {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Adjusts columns for smaller screens */
-    grid-gap: 1.5rem;
-    display: flex;
-  }
-  
-  .info-box {
-    padding: 1rem;
-    min-width: 18rem;
-    padding-block-end: 1rem;
-  }
-  .further-information-container {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Stacks more compactly on small screens */
-    padding: 1rem;
-    display: flex;
-  }
-  
-  .info-box {
-    min-width: 15rem;
-    padding: 0.8rem;
-  }
-
-}
-
 
 
 @media (max-width: 48rem) {
   .img-work {
-    position: relative;
     height: auto;
-    width: 100%;¨
-    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .work-aspects {
     flex-wrap: wrap;
@@ -809,7 +911,6 @@ a {
     .card-container {
         gap: 1rem;
         padding: 1em;
-        align-items: center;
     }
 }
 
@@ -839,17 +940,18 @@ a {
     align-items: center;
   }
 
-.banner-content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-.apply-text {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: 0.6em;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-  }
+    .banner-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .apply-text {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+    }
 }
