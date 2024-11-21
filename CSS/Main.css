@@ -13,7 +13,7 @@ body {
 
 /*Start of nav*/
 #navbar {
-    background-color: #323833;
+    background-color: #1c304a;
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
@@ -46,7 +46,7 @@ body {
 
 /*transfrom menu to orange when hovering mouse*/
 .nav-menu a:hover {
-    color: rgb(239, 182, 97);
+    color: rgb(243, 235, 223);
     transform: scale(1.2);
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .link-header{
-  background-color: #f6e54c;
+  background-color: #edebd8;
   font-size: 1.5rem;
   border: 5rem;
   margin-top: 2%;
@@ -395,8 +395,8 @@ a:hover {
 .semester-view h4 {
   padding: 1em 2em; 
   font-size: 1.2em;
-  background-color: #fbcd007d;
-  color: #030303;
+  background-color: #3e5773;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -614,7 +614,7 @@ a:hover {
 /*Footer container with flexible layout, background color and spacing*/
 .footer {
   display: flex;
-  background-color: rgba(79, 71, 71, 0.45);
+  background-color: #1c304a;
   padding: 1% 2%;
   width: 100%;
   overflow-x: hidden;
@@ -624,17 +624,23 @@ a:hover {
   position: relative;
 }
 
+.footer a{
+  color: white;
+}
+
 /*Styling for footer logo with responsive size and spacing*/
-.footerlogo {
+.footer-logo {
   align-self: flex-start;
-  width: 100%;
+  width: 30%;
   height: auto;
   margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 1%;
 }
 
 /*Footer links styled as a column with consistent spacing and readability*/
 .footerlinks {
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   margin: 1%;
@@ -650,7 +656,7 @@ a:hover {
 
 /*Footer section headings with increased font size and margin*/
 .footerlinks h2 {
-  color: black;
+  color: white;
   font-size: 120%;
   margin-bottom: 1vh;
 }
@@ -680,6 +686,7 @@ a:hover {
   justify-content: space-between;
   gap: 2vw;
   padding: 1.5em;
+  color: white;
 }
 /*End of footer*/
 
