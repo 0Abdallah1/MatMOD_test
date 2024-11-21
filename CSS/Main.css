@@ -38,8 +38,8 @@ body {
 
 /*menu text colors*/
 .nav-menu a {
-    font-size: 1.5em;
-    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    color: rgb(244, 245, 215);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
