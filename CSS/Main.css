@@ -748,6 +748,7 @@ a:hover {
     .card-container {
         gap: 1rem;
         padding: 1em;
+        align-items: center;
     }
 }
 
