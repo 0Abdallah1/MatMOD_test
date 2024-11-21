@@ -145,10 +145,11 @@ body {
     align-items:center;
 }
 
+/*Style of the one link in the headerIcon of "Søknad" */
 .headerIcon a {
     color: rgb(255, 255, 255);
-    transition: 1s;
     text-decoration: none;
+    
 }
 
 /* Styles of the text decsrption in header*/
@@ -181,13 +182,13 @@ body {
     transition: text-shadow 0.3s;
 }
 
-.global-box:hover {
+.global-box:hover, .global-box a:hover {
     color:rgb(255, 247, 216);
     transform: scale(1.2);
     box-shadow: 0em 0.25em 1em rgba(224, 224, 224, 0.4);
 }
 
-.global-box:hover i{
+.global-box:hover, .global-box a:hover i{
     text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.924);
 }
   
@@ -259,7 +260,15 @@ body {
    line-height: 1.6;
 }
 
-/* What can you work as? */
+
+/*Style of the solid line at end of important info section*/ 
+hr.solid {
+  border-top: 2px solid #000000;
+}
+
+
+
+/* Styles of: What can you work as?  */
 .work-aspects {
   display: flex;
   align-items: start;
@@ -284,16 +293,12 @@ body {
 }
 
 
-
-
 /* Info about the 3 Topics in the curriculum */
 
 /*Creats a solid section divider 
 source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
- hr.solid {
-  border-top: 2px solid #000000;
-}
+ 
 
 /* Creates a styled section for text with padding and margins */
 .text-style {
@@ -306,19 +311,19 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 
  /*Subtitles of the three topics within the curriculum */
-.subtitle {
+.sub-title {
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 1rem;
 }
 
  /*It's the container of the box-items*/
 .learningOutcome {
     padding: 2rem;
-    margin: 0rem 3.8rem  0.1rem;
+    margin: 2rem 3rem  1rem;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: space-between;
     color: #000;
 }
@@ -335,18 +340,22 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   display: inline-table;
   justify-content: baseline;
   border-radius: 2em;
-  width: 20em;
+  width: 25em;
   background-color: #f9f9f9;
   border: 0.1em solid #ccc;
   text-align: center;
 }
 
-/*syles the box's text to have padding, and margin, plus text size and line height*/
-.box p{
-  padding: 1rem;
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
+/* Styles of the texts within the boxes */
+/*syles the box's text to have padding, and margin, plus text size and line height etc*/
+/* Styles for text within the boxes */
+.box p {
+  font-size: 1.2rem; 
+  line-height: 1.5em;  
+  color: #333; 
+  padding: 0.5em; 
+  
+  
 }
 
 /*Style of the images inside the boxes*/
@@ -361,14 +370,18 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   transition: 0.5s ease;
 }
 
-/* Laget linje mellom tittel, og skapper mellomrom mellom uliek sections*/
+
+
+
+/* Styles for the divider line effect */
+/*Source Code: https://www.w3schools.com/howto/howto_css_text_divider.asp */
 .divider {
   font-size: 2em;
   display: flex;
   align-items: center;
 }
 
-/* comment */
+/* Creates space before the text in between the line, both before and after the text's placement in the middle of the line */
 .divider::before, .divider::after {
   flex: 1;
   content: '';
@@ -377,13 +390,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   margin: 2em;
 }
 
-/* Styles of the texts within the boxes */
-.box p {
-  overflow-wrap: break-word;
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.2rem;
-}
 
 /* General link style for all links on page*/
 a {
