@@ -52,7 +52,7 @@ body {
 
 /*scale logo*/
 #navbar img {
-    width: 30vh; height: auto; margin-left: -20%;
+    width: 30vh; height: auto; margin-left: -0%;
 }
 
 /*End of nav*/
@@ -107,24 +107,17 @@ body {
 }
 
 
-
-
-
-
-.oslomet-content{
-    color: rgb(255, 220, 243); 
-    position: absolute;
-    left: 0%;
-    top: 20%;
+.link-header{
+  background-color: #f6e54c;
+  font-size: 1.5rem;
+  border: 5rem;
+  margin-top: 2%;
+  border-radius: 2%;
+  border-radius: 1em;
+  border: 0.1em solid #ccc;
+  width: 100%;
+  height: 80%;
 }
-
-.oslomet-content li {
-    font-size: large;
-    list-style: none;
-    display: inline-block;  
-    justify-content: space-between;
-}
-
 /*Styles of all the icons inside the buttons with their texts*/
 .headerIcon {
     display: flex;
@@ -178,18 +171,17 @@ body {
 /*Start of main*/
 
 /*Important Information*/
-
 /* Section Header Styling */
 .important-info {
-    font-size: 2rem;
-    word-spacing: 0.2rem;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 0.5rem;
-    color: #1c086b;
-    border-bottom: 2px solid #280c97;
-    border-radius: 0.3em;  
+  font-size: 2rem;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #1c086b;
+  border-bottom: 2px solid #280c97;
+  border-radius: 0.3em;  
 }
 
 /* Card Container Styling */
@@ -197,6 +189,7 @@ body {
     margin: 2rem auto;
     box-sizing: border-box;
     display:inline-flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     padding: 1rem;
@@ -240,6 +233,7 @@ body {
 
 .img-work {
   height: auto;
+  width: 90vh;
   width: 37rem;
   
 }
@@ -264,12 +258,11 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 /* Creates a styled section for text with padding and margins */
 .text-style {
-  padding: 1rem; /* Adds space inside the text container */
-  margin: 0rem 5rem 1rem; /* Adds space around the text (top: 0, sides: 5rem, bottom: 1rem) */
-  font-size: 1.4rem; /* Sets the font size for readability */
-  text-align: center; /* Centers the text horizontally */
-  line-height: 1.5em; /* Improves readability by spacing lines */
-  width: 90%; /* Limits the width of the text container to 90% of its parent */
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem; 
+  text-align: center;
+  line-height: 1.5em; 
 }
 
 
@@ -353,34 +346,36 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   line-height: 1.2rem;
 }
 
+/* General link style for all links on page*/
+a {
+  text-decoration: none;
+  text-decoration: underline #3286ed;
+  line-height: 1.9rem;
+}
 
 
-
+/*!!repetert to ganger under!!*/
 
 
 /* Styles of The study's structure*/
 .semester-view {    
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1em; 
-    margin-top: 3em; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1em; 
-    margin-top: 3em; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1em; 
+  margin-top: 3em;
 }
 
 .semester-view h4 {
   padding: 1em 2em; 
   font-size: 1.2em;
-  background-color: #fbcd007d;
+  background-color: #00a6ff7d;
   color: #030303;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  width: 30%;
+  text-align: center;
+  border-radius: 1em;
+
 }
   
 .semester-container h3 {
@@ -691,6 +686,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 .content-container {
   padding-top: 10em;
   flex-wrap: wrap;
+  background-color: rgb(255, 246, 255);
 }
 
 .section-container {
@@ -716,7 +712,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 .section-img-container img {
   display: flex;
-  max-width: 90vh;
+  max-width: 80vh;
   right: 5%;
   height: auto; 
   border-radius: 1em;
@@ -725,9 +721,17 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 /*Actvity Page End*/
 
 
-/*Media*/
-/*SUBJECT TO CHANGE because this code dosent feel right and its from the internet*/
+
 @media (max-width: 768px) {
+  .img-work {
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .work-aspects {
+    flex-wrap: wrap;
+    align-items: start;
+  }
     .card {
         width: 100%;
         padding: 1rem;
@@ -747,11 +751,11 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
         padding: 1em;
         text-align: center;
         font-size: 2vh;
+        color: black;
     }
 
     .banner-content {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -762,5 +766,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
         margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
+        color: black;
     }
 }
