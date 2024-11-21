@@ -58,6 +58,7 @@ body {
 /*End of nav*/
 
 
+
 /*Start of header*/
 
 /*Banner for Oslomet picture*/
@@ -95,7 +96,7 @@ body {
     flex-direction: column;
     font-size: 3.5vh;
     position: center;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .banner-text h1 {
@@ -107,23 +108,19 @@ body {
 }
 
 
-.link-header{
-  background-color: #f6e54c;
-  font-size: 1.5rem;
-  border: 5rem;
-  margin-top: 2%;
-  border-radius: 2%;
-  border-radius: 1em;
-  border: 0.1em solid #ccc;
-  width: 100%;
-  height: 80%;
-}
+
 /*Styles of all the icons inside the buttons with their texts*/
 .headerIcon {
     display: flex;
     gap: 0.9em ;
     justify-content: flex-start;
     align-items:center;
+}
+
+.headerIcon a {
+    color: rgb(244, 245, 215);
+    transition: 1s;
+    text-decoration: none;
 }
 
 /* Styles of the text decsrption in header*/
@@ -134,7 +131,9 @@ body {
 
 /*Styles of the icon buttons */
 .global-box {
-    padding: 0.3em ;
+    padding: 0.3em;
+    font-weight: bold;
+    font-size: 1em;
     margin-top: 1%;
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, 0.3);
