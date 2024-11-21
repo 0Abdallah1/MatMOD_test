@@ -39,8 +39,8 @@ body {
 
 /*menu text colors*/
 .nav-menu a {
-    font-size: 1.2em;
-    color: rgb(244, 245, 215);
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
     transition: 1s;
     text-decoration: none;
     font-weight: bold;
@@ -48,8 +48,9 @@ body {
 
 /*transfrom menu to orange when hovering mouse*/
 .nav-menu a:hover {
-    color: rgb(243, 235, 223);
+    color: #ff9f60;
     transform: scale(1.2);
+    text-decoration: underline;
 }
 
 /*scale logo*/
@@ -145,7 +146,7 @@ body {
 }
 
 .headerIcon a {
-    color: rgb(244, 245, 215);
+    color: rgb(255, 255, 255);
     transition: 1s;
     text-decoration: none;
 }
@@ -181,13 +182,13 @@ body {
 }
 
 .global-box:hover {
-    color: rgb(239, 182, 97);
+    color:rgb(255, 247, 216);
     transform: scale(1.2);
-    box-shadow: 0em 0.25em 1em rgba(239, 182, 97, 0.4);
+    box-shadow: 0em 0.25em 1em rgba(224, 224, 224, 0.4);
 }
 
 .global-box:hover i{
-    text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.8);
+    text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.924);
 }
   
 
@@ -222,6 +223,17 @@ body {
     justify-content: center;
     padding: 1rem;
 }
+
+/*Styles of links in the cards, a change of color different from the generial style of links*/
+.card a{
+  color: #22313cc0;
+}
+
+/*On hover the color changes to purple*/
+.card a:hover {
+    color: #800080; /* Purple color for visited links (example) */
+}
+
 
 /* Card Styling */
 .card {
@@ -381,6 +393,7 @@ a {
 }
 
 
+
 /*!!repetert to ganger under!!*/
 
 
@@ -446,7 +459,7 @@ a {
   grid-template-rows: 100%;
   grid-gap: 17%; 
   width: 75%;
-  height: 80vh;
+  height: 88vh;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
@@ -459,7 +472,7 @@ a {
 }
 
 /*Defining dimensions for the images*/
-.videreinfo-img {
+.further-info-img {
   width: 100%;
   height: 55%;
   margin-bottom: 5%;
@@ -475,7 +488,6 @@ a {
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin-bottom: 10%;
-  margin-top: 1em;
   padding: 2%;
   padding-left: 4%;
   padding-bottom: 3rem;
@@ -485,6 +497,23 @@ a {
 /*Enlarging the box slightly on hover*/
 .info-box:hover {
   transform: scale(1.1);
+}
+
+/*info-box style */
+.info-box a{
+  color: #433a3ad4;
+  line-height: 2.5rem;
+}
+
+/*Creats word-space in a specific links within the class of p: other studies*/
+.other-studies{
+ word-spacing: 0.5rem;
+
+}
+/*hover style of info-box links*/
+.info-box a:hover{
+    color: #535eff;
+
 }
 
 /* Adding custom padding for the first info-box*/
@@ -513,6 +542,97 @@ a {
 
 /*End of further information*/
 
+
+ /*FOOTER*/
+
+/* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
+
+/*Footer container with flexible layout, background color and spacing*/
+.footer {
+  display: flex;
+  background-color: #1c304a;
+  padding: 1% 2%;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 5%;
+}
+
+.footer a{
+  color: white;
+   text-decoration: underline #a8cfff;
+   line-height: 3em;
+}
+
+.footer a:hover{
+  color: #f1c40f;
+}
+
+
+/*Styling for footer logo with responsive size and spacing*/
+.footer-logo {
+  align-self: flex-start;
+  width: 30%;
+  height: auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 1%;
+}
+
+/*Footer links styled as a column with consistent spacing and readability*/
+.footerlinks {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  flex: 1;
+  line-height: 1.6;
+}
+
+/*Icon styling for consistent size and responsiveness*/
+.icon {
+  width: 4vh;
+  height: auto;
+}
+
+/*Footer section headings with increased font size and margin*/
+.footerlinks h2 {
+  color: white;
+  font-size: 120%;
+  margin-bottom: 1vh;
+}
+
+/*Styling for map sections in the footer with alignment to the right*/
+.footermap, .google-maps {
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  margin-left: auto;
+  top: 0.5vh;
+  right: 0.5%;
+  align-items:flex-end;
+  position: relative;
+}
+
+/*List items in footer with spacing and no bullets*/
+.footer li {
+  line-height: 1.6;
+  list-style: none;
+}
+
+/*Adress info section styled for alignment and spacing*/
+.footer .adressinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 1.5em;
+  color: white;
+}
+/*End of footer*/
 
 
 
@@ -605,90 +725,6 @@ a {
 /*End of Accesssibility*/
 
 
-
-  /*FOOTER*/
-
-/* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
-
-/*Footer container with flexible layout, background color and spacing*/
-.footer {
-  display: flex;
-  background-color: #1c304a;
-  padding: 1% 2%;
-  width: 100%;
-  overflow-x: hidden;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  margin-top: 5%;
-}
-
-.footer a{
-  color: white;
-}
-
-/*Styling for footer logo with responsive size and spacing*/
-.footer-logo {
-  align-self: flex-start;
-  width: 30%;
-  height: auto;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  font-size: 1%;
-}
-
-/*Footer links styled as a column with consistent spacing and readability*/
-.footerlinks {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 1%;
-  flex: 1;
-  line-height: 1.6;
-}
-
-/*Icon styling for consistent size and responsiveness*/
-.icon {
-  width: 4vh;
-  height: auto;
-}
-
-/*Footer section headings with increased font size and margin*/
-.footerlinks h2 {
-  color: white;
-  font-size: 120%;
-  margin-bottom: 1vh;
-}
-
-/*Styling for map sections in the footer with alignment to the right*/
-.footermap, .google-maps {
-  flex-direction: column;
-  justify-content: flex-end;
-  display: flex;
-  margin-left: auto;
-  top: 0.5vh;
-  right: 0.5%;
-  align-items:flex-end;
-  position: relative;
-}
-
-/*List items in footer with spacing and no bullets*/
-.footer li {
-  line-height: 1.6;
-  list-style: none;
-}
-
-/*Adress info section styled for alignment and spacing*/
-.footer .adressinfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2vw;
-  padding: 1.5em;
-  color: white;
-}
-/*End of footer*/
 
 
 
