@@ -261,7 +261,7 @@ hr.solid {
   flex-wrap: wrap;
   font-size: 1.4rem; 
   text-align: center;
-  line-height: 1.5em; 
+  line-height: 1.8em; 
 }
 
  /*Subtitles of the three topics within the curriculum */
@@ -627,6 +627,12 @@ a {
   position: relative;
   max-width: 60rem;
   margin: 0 auto;
+}
+
+/*id style of text under picture*/
+  #img-comment{
+    margin-left: 20%;
+    font-size: 1.2em;
 }
 
  /*Styling for slider with flex layout, smoth scrolling and shadow effect*/ 
