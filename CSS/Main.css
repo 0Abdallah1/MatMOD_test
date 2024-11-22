@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/**/
+
+
+/* Sets a vertical flex layout for the body with no margins, a clean font, and a background color */
 body {
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ body {
     font-weight: bold;
 }
 
-/*transfrom menu to orange when hovering mouse*/
+/*transfroms the tex menu to orange when hovering mouse*/
 .nav-menu a:hover {
     color: #ff9f60;
     transform: scale(1.2);
@@ -64,14 +66,11 @@ body {
 
 /*Start of header*/
 
-/*Banner for Oslomet picture*/
-.banner-front {
+/* Styles of the content, places content in middle and set's it to flex texts */
+.banner-content {
     position: relative;
     width: 100%;
     height: auto;
-}
-
-.banner-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +78,8 @@ body {
     position: relative;
 }
 
-.banner-front img {
+/* */
+.banner-content img {
     position: relative;
     width: 100%;
     height: auto;
@@ -126,12 +126,12 @@ body {
 }
 
 /* Styles of the text decsrption in header*/
-.headerText{
+.banner-content p{
   margin-top: 2rem; /*space away from icons above */
   font-size: 1,5rem; 
 }
 
-/*Styles of the icon buttons */
+/*Styles of the buttons containing the icons */
 .global-box {
     padding: 0.3em;
     font-weight: bold;
@@ -148,10 +148,12 @@ body {
     box-shadow: 0em 0.25em 1em rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.3s ,box-shadow 0.3s;
 }
+
+/*Styles of the icons*/
 .global-box i {
     margin-right: 0.4em;
     font-size: 1.5em;
-    transition: text-shadow 0.3s;
+    transition: text-shadow 0.5s;
 }
 /*While hovering on icons change color and add transition shadow*/
 .global-box:hover, .global-box a:hover {
@@ -223,6 +225,7 @@ body {
     box-shadow: 0 0.75rem 1.5rem rgba(61, 61, 61, 0.15);
 }
 
+/*Styls of texts content in cards*/
 .card-content {
   font-size: 1.1em;
   line-height: 1.6;
@@ -233,7 +236,6 @@ body {
 hr.solid {
   border-top: 2px solid #000000;
 }
-
 
 
 /* Styles of: What can you work as?  */
@@ -247,30 +249,8 @@ hr.solid {
   margin-bottom: 3%;
 }
 
-.img-work {
-  height: auto;
-  width: 90vh;
-  width: 37rem;
-  
-}
 
-#work-aspects-text{
-  display: flex;
-  padding: 1.5%;
-  text-align: left;
-}
-
-
-/* Info about the 3 Topics in the curriculum */
-
-/*Creats a solid section divider 
-source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
-
- hr.solid {
-  border-top: 0.125rem solid #000000;
-}
-
-/* Creates a styled section for text with padding and margins */
+/* Creates a style for the text: This style is re-used in upcoming learningOutcome section, and in accessibility page*/
 .text-style {
   display: flex;
   flex-wrap: wrap;
@@ -278,6 +258,21 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   text-align: center;
   line-height: 1.5em; 
 }
+
+/*Styles of the imgae in work-aspects section*/
+.img-work {
+  height: auto;
+  width: 90vh;
+  width: 37rem;
+  
+}
+
+
+
+/* Info about the 3 Topics in the curriculum */
+
+/*Creats a solid section divider 
+source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 
  /*Subtitles of the three topics within the curriculum */
@@ -316,9 +311,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   text-align: center;
 }
 
-/* Styles of the texts within the boxes */
-/*syles the box's text to have padding, and margin, plus text size and line height etc*/
-/* Styles for text within the boxes */
+/* Styles of the texts within the boxes: padding,  margin, plus text size and line height*/
 .box p {
   font-size: 1.2rem; 
   line-height: 1.5em;  
@@ -341,7 +334,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 
 
 
-/* Styles for the divider line effect */
+/* General Style for the divider line effect*/
 /*Source Code: https://www.w3schools.com/howto/howto_css_text_divider.asp */
 .divider {
   font-size: 2em;
@@ -359,7 +352,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 
-/* General link style for all links on page*/
+/* General link style for all links on the page, except for those links specifically designed within their sections*/
 a {
   text-decoration: none;
   text-decoration: underline #3286ed;
@@ -367,13 +360,14 @@ a {
 }
 
 
-/* Styles of The study's structure*/
+/* Styles of The study's structure*s titles */
 .semester-container h4 {
   font-size: 1.3rem;
   color: #0072b1;
   padding: 0.7rem;
 }
-/*Makes the */
+
+/*Syle  */
 .semester-view {    
   display: flex;
   flex-direction: column; 
@@ -524,12 +518,14 @@ a {
   margin-top: 5%;
 }
 
+/* style of the footer links*/
 .footer a{
   color: white;
    text-decoration: underline #a8cfff;
    line-height: 3em;
 }
 
+/*Hover style for footer*/
 .footer a:hover{
   color: #f1c40f;
 }
@@ -685,6 +681,7 @@ a {
   opacity: 1;
 }
 
+/*Styles of the images in accessibility page*/
 .accessibility-img{
   width: 60%;
   height: auto;
@@ -692,11 +689,6 @@ a {
   margin-top: 5%;
 }
 
-.accessibility-img-tekst{
-  width: 60%;
-  height: auto;
-  margin-left: 40%;
-}
 /*End of Accesssibility*/
 
 
@@ -823,6 +815,7 @@ a {
   background-color: rgb(255, 246, 255);
 }
 
+/*Sections container both wraps and flex both text and image container*/
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -835,6 +828,7 @@ a {
   box-sizing: border-box;
 }
 
+/*Styles of the texts in acitivity page*/
 .section-text-container {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
