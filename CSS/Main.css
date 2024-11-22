@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*makes body default*/
 body {
     display: flex;
@@ -100,6 +101,7 @@ body {
     position: center;
     margin-left: 10%;
 }
+
 /*Text for our page*/
 .banner-text h1 {
     font-size: 4vw; 
@@ -120,8 +122,7 @@ body {
 /*Style of the one link in the headerIcon of "Søknad" */
 .headerIcon a {
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 /* Styles of the text decsrption in header*/
@@ -147,17 +148,20 @@ body {
     box-shadow: 0em 0.25em 1em rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.3s ,box-shadow 0.3s;
 }
+
 .global-box i {
     margin-right: 0.4em;
     font-size: 1.5em;
     transition: text-shadow 0.3s;
 }
+
 /*While hovering on icons change color and add transition shadow*/
 .global-box:hover, .global-box a:hover {
     color:rgb(255, 247, 216);
     transform: scale(1.2);
     box-shadow: 0em 0.25em 1em rgba(224, 224, 224, 0.4);
 }
+
 .global-box:hover, .global-box a:hover i{
     text-shadow: 0em 0em 0.625em rgba(239, 182, 97, 0.924);
 }
@@ -202,7 +206,6 @@ body {
     color: #800080; /* Purple color for visited links (example) */
 }
 
-
 /* Card Styling */
 .card {
     width: 25%;
@@ -227,13 +230,10 @@ body {
   line-height: 1.6;
 }
 
-
 /*Style of the solid line at end of important info section*/ 
 hr.solid {
   border-top: 2px solid #000000;
 }
-
-
 
 /* Styles of: What can you work as?  */
 .work-aspects {
@@ -250,7 +250,6 @@ hr.solid {
   height: auto;
   width: 90vh;
   width: 37rem;
-  
 }
 
 #work-aspects-text{
@@ -277,7 +276,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   text-align: center;
   line-height: 1.5em; 
 }
-
 
  /*Subtitles of the three topics within the curriculum */
 .sub-title {
@@ -316,7 +314,7 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 /* Styles of the texts within the boxes */
-/*syles the box's text to have padding, and margin, plus text size and line height etc*/
+/*styles the box's text to have padding, and margin, plus text size and line height etc*/
 /* Styles for text within the boxes */
 .box p {
   font-size: 1.2rem; 
@@ -338,8 +336,6 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
 }
 
 
-
-
 /* Styles for the divider line effect */
 /*Source Code: https://www.w3schools.com/howto/howto_css_text_divider.asp */
 .divider {
@@ -357,14 +353,12 @@ source code; https://www.w3schools.com/howto/howto_css_dividers.asp */
   margin: 2em;
 }
 
-
 /* General link style for all links on page*/
 a {
   text-decoration: none;
   text-decoration: underline #3286ed;
   line-height: 1.9rem;
 }
-
 
 /* Styles of The study's structure*/
 .semester-container h4 {
@@ -380,6 +374,7 @@ a {
   gap: 1em; 
   margin-top: 3em;
 }
+
 /*Targets h3 of semester-view and colors and styles it*/
 .semester-view h3 {
   font-size: 1.3rem;
@@ -390,6 +385,7 @@ a {
   color: #e5e9ec;
   cursor: pointer;
 }
+
   /* Table Styling */
   /*https://www.w3schools.com/css/css_table_style.asp*/
 .course-table {
@@ -397,15 +393,18 @@ a {
   border-collapse: collapse;
   margin: 0.5rem 0;
 }
+
 .course-table td {
   padding: 0.6rem;
   font-size: 1rem;
 }
+
 /*those that have links get colored, and removes text-decoration*/
 .course-table a {
   color: #00509e;
   text-decoration: none;
 }
+
 /*https://www.w3schools.com/cssref/sel_nth-child.php*/
 /*Psuedo child to make tables have variations*/
 .course-table tr:nth-child(even) {
@@ -440,7 +439,6 @@ a {
   width: 100%;
   height: 55%;
   margin-bottom: 5%;
-  
 }
 
 /* Styling individual info-box*/
@@ -524,12 +522,14 @@ a {
   margin-top: 5%;
 }
 
+/*Styles footer links with white text*/
 .footer a{
   color: white;
    text-decoration: underline #a8cfff;
    line-height: 3em;
 }
 
+/*Changing hover color to gold*/
 .footer a:hover{
   color: #f1c40f;
 }
@@ -685,6 +685,7 @@ a {
   opacity: 1;
 }
 
+/*Centers image with adjusted width and margins*/
 .accessibility-img{
   width: 60%;
   height: auto;
@@ -692,100 +693,14 @@ a {
   margin-top: 5%;
 }
 
+/*Aligns text with adjusted width and left margin*/
 .accessibility-img-tekst{
   width: 60%;
   height: auto;
   margin-left: 40%;
 }
+
 /*End of Accesssibility*/
-
-
-
-  /*FOOTER*/
-
-/* Source: https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
-
-/*Footer container with flexible layout, background color and spacing*/
-.footer {
-  display: flex;
-  background-color: #1c304a;
-  padding: 1% 2%;
-  width: 100%;
-  overflow-x: hidden;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  margin-top: 5%;
-}
-
-.footer a{
-  color: white;
-}
-
-/*Styling for footer logo with responsive size and spacing*/
-.footer-logo {
-  align-self: flex-start;
-  width: 30%;
-  height: auto;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  font-size: 1%;
-}
-
-/*Footer links styled as a column with consistent spacing and readability*/
-.footerlinks {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 1%;
-  flex: 1;
-  line-height: 1.6;
-}
-
-/*Icon styling for consistent size and responsiveness*/
-.icon {
-  width: 4vh;
-  height: auto;
-  
-}
-
-/*Footer section headings with increased font size and margin*/
-.footerlinks h2 {
-  color: white;
-  font-size: 120%;
-  margin-bottom: 1vh;
-}
-
-/*Styling for map sections in the footer with alignment to the right*/
-.footermap, .google-maps {
-  flex-direction: column;
-  justify-content: flex-end;
-  display: flex;
-  margin-left: auto;
-  top: 0.5vh;
-  right: 0.5%;
-  align-items:flex-end;
-  position: relative;
-}
-
-/*List items in footer with spacing and no bullets*/
-.footer li {
-  line-height: 1.6;
-  list-style: none;
-}
-
-/*Adress info section styled for alignment and spacing*/
-.footer .adressinfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2vw;
-  padding: 1.5em;
-  color: white;
-}
-/*End of footer*/
-
 
 
 /*Activity Page CSS Start*/
@@ -797,6 +712,7 @@ a {
   width: auto; 
   height: 100%; 
 }
+
 /*Text for header image*/
 .header-front h2 {
   margin-right: 4vw;
@@ -807,6 +723,7 @@ a {
   position: absolute;
   color: white;
 }
+
 /*set a red background*/
 .bg {
   background-image: url(/Images/redbackground.png);
@@ -816,6 +733,7 @@ a {
   position: relative;
   min-height: 100vh; 
 }
+
 /*basically whole of main and added flex wrap so it scales*/
 .content-container {
   padding-top: 10em;
@@ -840,10 +758,12 @@ a {
   font-size: 1.5em;
   max-width: 25em;
 }
+
 /*padding so it dosen't touch each other*/
 .section-text-container h2 {
   padding-bottom: 0.5rem;
 }
+
 /*image for activity page*/
 .section-img-container img {
   display: flex;
@@ -853,6 +773,7 @@ a {
   border-radius: 1em;
   padding-bottom: 1em;
 }
+
 /*Actvity Page End*/
 
 
@@ -863,18 +784,21 @@ a {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .work-aspects {
     flex-wrap: wrap;
     align-items: start;
   }
-    .card {
-        width: 100%;
-        padding: 1rem;
-    }
-    .card-container {
-        gap: 1rem;
-        padding: 1em;
-    }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-container {
+    gap: 1rem;
+    padding: 1em;
+  }
 }
 
 
@@ -892,6 +816,7 @@ a {
     color: black;
     align-items: center;
   }
+
   .headerText {
     position: relative;
     top: auto;
@@ -904,21 +829,12 @@ a {
     align-items: center;
   }
 
-    .banner-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .apply-text {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin-top: 1em;
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-    }
+  .banner-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 /*Media to adjust scaling to the page for 1200px and bellow that*/
 @media screen and (max-width: 1200px){
   .further-information-container {
@@ -932,6 +848,7 @@ a {
     min-width: 18rem;
     padding-block-end: 1rem;
   }
+
   .further-information-container {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /*Adjusts to when the screen is made just a little smaller*/
     padding: 1rem;
@@ -942,6 +859,7 @@ a {
     min-width: 15rem;
     padding: 0.8rem;
   }
+
   .learningOutcome {
     padding: 2rem;
     margin: 2rem 3rem  1rem;
