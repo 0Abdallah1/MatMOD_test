@@ -387,7 +387,8 @@ a {
   border-radius: 1em;
   margin: 0.5rem;
   padding: 1.7rem 6rem;
-  background-color: rgb(30, 188, 255);
+  background-color: #3e5773;
+  color: #e5e9ec;
   cursor: pointer;
 }
   /* Table Styling */
@@ -476,7 +477,6 @@ a {
 /*hover style of info-box links*/
 .info-box a:hover{
     color: #535eff;
-
 }
 
 /* Adding custom padding for the first info-box*/
